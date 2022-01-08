@@ -72,7 +72,7 @@
       "message": "訊息",
       "post": "貼文留言",
       "moderated": "請注意，留言須先通過審核才會發佈",
-      "success_moderated": "您已成功留言。由於我們的部落格有人管理，因此過一段時間後才會進行發佈。",
+      "success_moderated": "您已成功留言。由於我們的網誌有人管理，因此過一段時間後才會進行發佈。",
       "success": "您已成功留言！感謝您！"
     },
     "sidebar": {
@@ -196,7 +196,7 @@
       "shipping": "運送",
       "tax": "稅金",
       "product": "產品",
-      "sku": "SKU",
+      "sku": "存貨單位 (SKU)",
       "price": "價格",
       "quantity": "數量",
       "total": "總計",
@@ -280,7 +280,7 @@
       "sold_out": "售罄",
       "sale": "銷售額",
       "unavailable": "無法供貨",
-      "compare_at": "售價",
+      "compare_at": "比較",
       "quantity": "數量",
       "add_to_cart": "加入購物車",
       "sale_price": "售價",

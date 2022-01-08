@@ -19,8 +19,8 @@
       "login_form_password_label": "Adgangskode",
       "login_form_password_placeholder": "Din adgangskode",
       "login_form_submit": "Tilgå",
-      "signup_form_email_label": "E-mail",
-      "signup_form_success": "Vi sender en e-mail til dig, lige inden vi åbner.",
+      "signup_form_email_label": "Mail",
+      "signup_form_success": "Vi sender en mail til dig, lige inden vi åbner.",
       "admin_link_html": "Ejer du butikken? <a href=\"/admin\" class=\"text-link\">Log ind her</a>",
       "password_link": "Brug adgangskode for at få adgang",
       "powered_by_shopify_html": "Denne butik vil blive drevet af {{ shopify }}",
@@ -31,7 +31,7 @@
       "home_link_title": "Tilbage til forsiden"
     },
     "newsletter_form": {
-      "newsletter_email": "Din e-mail",
+      "newsletter_email": "Din mail",
       "submit": "Abonnér",
       "confirmation": "Tak for dit abonnement"
     },
@@ -68,7 +68,7 @@
     "comments": {
       "title": "Indsend en kommentar",
       "name": "Navn",
-      "email": "E-mail",
+      "email": "Mail",
       "message": "Besked",
       "post": "Opslå kommentar",
       "moderated": "Bemærk, at kommentarer skal godkendes, før de bliver offentliggjort",
@@ -120,7 +120,7 @@
   "contact": {
     "form": {
       "name": "Navn",
-      "email": "E-mail",
+      "email": "Mail",
       "phone": "Telefonnummer",
       "message": "Besked",
       "send": "Send",
@@ -166,7 +166,7 @@
     },
     "login": {
       "title": "Log ind",
-      "email": "E-mail",
+      "email": "Mail",
       "password": "Adgangskode",
       "forgot_password": "Har du glemt din adgangskode?",
       "sign_in": "Log ind",
@@ -179,7 +179,7 @@
       "order_number": "Ordre",
       "date": "Dato",
       "payment_status": "Betalingsstatus",
-      "fulfillment_status": "Behandlingsstatus",
+      "fulfillment_status": "Klargøringsstatus",
       "total": "I alt",
       "none": "Du har indnu ikke indgivet nogen ordrer."
     },
@@ -191,7 +191,7 @@
       "billing_address": "Faktureringsadresse",
       "payment_status": "Betalingsstatus",
       "shipping_address": "Leveringsadresse",
-      "fulfillment_status": "Behandlingsstatus",
+      "fulfillment_status": "Klargøringsstatus",
       "discount": "Rabat",
       "shipping": "Levering",
       "tax": "Moms",
@@ -200,17 +200,17 @@
       "price": "Pris",
       "quantity": "Antal",
       "total": "I alt",
-      "fulfilled_at": "Behandlet den {{ date }}",
+      "fulfilled_at": "Klargjort den {{ date }}",
       "subtotal": "Subtotal",
       "track_shipment": "Følg forsendelse"
     },
     "recover_password": {
       "title": "Forny din adgangskode",
-      "email": "E-mail",
+      "email": "Mail",
       "submit": "Indsend",
       "cancel": "Annuller",
-      "subtext": "Vi sender dig en e-mail, så du kan forny din adgangskode.",
-      "success": "Vi har sendt dig en e-mail med et link, så du kan opdatere din adgangskode."
+      "subtext": "Vi sender dig en mail, så du kan forny din adgangskode.",
+      "success": "Vi har sendt dig en mail med et link, så du kan opdatere din adgangskode."
     },
     "reset_password": {
       "title": "Forny adgangskode til konto",
@@ -223,7 +223,7 @@
       "title": "Opret konto",
       "first_name": "Fornavn",
       "last_name": "Efternavn",
-      "email": "E-mail",
+      "email": "Mail",
       "password": "Adgangskode",
       "submit": "Opret",
       "cancel": "Gå tilbage til butikken"

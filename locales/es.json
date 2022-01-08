@@ -12,7 +12,7 @@
     },
     "404": {
       "title": "404 Página no encontrada",
-      "subtext_html": "La página que ha solicitado no existe. Haz clic <a href=\"{{ link }}\">aquí</a> para continuar la compra."
+      "subtext_html": "La página que ha solicitado no existe. Haz clic <a href=\"{{ link }}\">aquí</a> para seguir comprando."
     },
     "password_page": {
       "login_form_heading": "Entrar a la tienda usando contraseña:",
@@ -87,10 +87,10 @@
       "note": "Instrucciones especiales para el vendedor",
       "subtotal": "Subtotal",
       "savings_html": "Está ahorrando {{ price }}",
-      "taxes_and_shipping_at_checkout": "Los impuestos y gastos de envío se calculan en la pantalla de pagos",
-      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pagos",
-      "taxes_included_but_shipping_at_checkout": "En la pantalla de pagos se incluye el impuesto y se calculan los gastos de envío",
-      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pagos.",
+      "taxes_and_shipping_at_checkout": "Los impuestos y gastos de envío se calculan en la pantalla de pago",
+      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago",
+      "taxes_included_but_shipping_at_checkout": "En la pantalla de pago se incluye el impuesto y se calculan los gastos de envío",
+      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago.",
       "update": "Actualizar carrito",
       "checkout": "Finalizar pedido",
       "empty": "Su carrito actualmente está vacío.",
@@ -232,7 +232,7 @@
   "home_page": {
     "onboarding": {
       "product_vendor": "El proveedor del producto",
-      "product_title": "Ejemplo título de producto",
+      "product_title": "Ejemplo de título de producto",
       "blog_title": "Título de tu publicación",
       "blog_excerpt": "Tu tienda no ha publicado ninguna entrada en el blog. Un blog puede ser utilizado para hablar sobre los nuevos lanzamientos del producto, consejos u otras noticias que deseas compartir con tus clientes. Puedes verificar el blog de ecommerce Shopify para la inspiración y consejos para tu propia tienda y blog.",
       "collection_title": "Ejemplo título de colección"
@@ -273,7 +273,7 @@
     "general": {
       "from_html": "De {{ price }}",
       "include_taxes": "Impuesto incluido.",
-      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pagos.",
+      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago.",
       "share_title": "Compartir este producto"
     },
     "product": {

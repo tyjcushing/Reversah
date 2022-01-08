@@ -41,7 +41,7 @@
               <div class="grid">
 
                 <div class="grid__item one-third">
-                  <a href="{{ item.url | within: collections.all }}">
+                  <a href="{{ item.url }}">
                     {% unless item.image == blank %}
                       {% capture img_id %}ProductImage-{{ item.id }}{% endcapture %}
                       {% capture wrapper_id %}ProductImageWrapper-{{ item.id }}{% endcapture %}
@@ -72,7 +72,7 @@
                   <a href="{{ item.url }}" class="h5 cart__product-title">
                     {{ item.product.title }}
                   </a>
-                  {% unless item.variant.title contains 'Default' %}
+                  {% unless item.product.has_only_default_variant %}
                     <br>
                     <small>{{ item.variant.title }}</small>
                   {% endunless %}
@@ -213,13 +213,13 @@
                 </div>
               {%- endif -%}
               <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
-              <span class="h5 cart__subtotal-price">{{ cart.total_price | money }}</span>
+              <span class="h5 cart__subtotal-price">{{ cart.total_price | money_with_currency }}</span>
             </p>
 
             {%- capture taxes_shipping_checkout -%}
-              {%- if shop.taxes_included and shop.shipping_policy.body != blank -%}
+              {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                 {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
-              {%- elsif shop.taxes_included -%}
+              {%- elsif cart.taxes_included -%}
                 {{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}
               {%- elsif shop.shipping_policy.body != blank -%}
                 {{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}

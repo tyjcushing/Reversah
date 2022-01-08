@@ -260,11 +260,11 @@ $colorTopBarText: #000000;
 // Backgrounds
 $colorBody: #ffffff;
 $colorHeader: transparent;
-$colorTopBar: #82b8ad;
-$passwordBgImage: '//cdn.shopify.com/s/files/1/0550/1871/7362/t/2/assets/password-page-background.jpg?v=12987344696580752000';
+$colorTopBar: #cbd5cc;
+$passwordBgImage: '//cdn.shopify.com/s/files/1/0550/1871/7362/t/4/assets/password-page-background.jpg?v=12987344696580752000';
 
 // Border colors
-$colorBorder: #d1d1d1;
+$colorBorder: #ebebeb;
 
 // Nav and dropdown link background
 $colorNavText: #000000;
@@ -291,64 +291,64 @@ $passwordPageUseBgImage: true;
 
 
 @font-face {
-  font-family: Poppins;
-  font-weight: 400;
-  font-style: normal;
-  src: url("https://fonts.shopifycdn.com/poppins/poppins_n4.934accbf9f5987aa89334210e6c1e9151f37d3b6.woff2?h1=cmV2ZXJzYWguY29t&hmac=f82a5365a2ee2dbf33b6de470df376e1900059049bd91e781dbbf852bc05dcea") format("woff2"),
-       url("https://fonts.shopifycdn.com/poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff?h1=cmV2ZXJzYWguY29t&hmac=157b2f27d56cfbb9abce2233c9c65cae4704fb1790bec330033036d8cc08137e") format("woff");
-}
-
-@font-face {
-  font-family: Asap;
-  font-weight: 400;
-  font-style: normal;
-  src: url("https://fonts.shopifycdn.com/asap/asap_n4.bbd5a7069d8fda6c6087204fae2b7f4dca87bf11.woff2?h1=cmV2ZXJzYWguY29t&hmac=f2ca35d0eb91afe85515b1600e6647e5aa2423a3b4eae453635dfd06afb1427d") format("woff2"),
-       url("https://fonts.shopifycdn.com/asap/asap_n4.b026277a6ffe301172d58b44f76f4a17a1fcac3a.woff?h1=cmV2ZXJzYWguY29t&hmac=8d2d3f66bf000dce46af569181baf4224b8e3563efc3f6919245765cfa4d06bb") format("woff");
-}
-
-@font-face {
-  font-family: Poppins;
-  font-weight: 400;
-  font-style: normal;
-  src: url("https://fonts.shopifycdn.com/poppins/poppins_n4.934accbf9f5987aa89334210e6c1e9151f37d3b6.woff2?h1=cmV2ZXJzYWguY29t&hmac=f82a5365a2ee2dbf33b6de470df376e1900059049bd91e781dbbf852bc05dcea") format("woff2"),
-       url("https://fonts.shopifycdn.com/poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff?h1=cmV2ZXJzYWguY29t&hmac=157b2f27d56cfbb9abce2233c9c65cae4704fb1790bec330033036d8cc08137e") format("woff");
-}
-
-@font-face {
-  font-family: Asap;
+  font-family: "Source Sans Pro";
   font-weight: 700;
   font-style: normal;
-  src: url("https://fonts.shopifycdn.com/asap/asap_n7.7bd55001047b49c74380766dd2ce271b2bbd7546.woff2?h1=cmV2ZXJzYWguY29t&hmac=b090b23a7ce9a552967ca76ea912d677567cbc02a6aafc778cf0bf3b163d448e") format("woff2"),
-       url("https://fonts.shopifycdn.com/asap/asap_n7.207615f24029b800e60882acaeb7100682edd480.woff?h1=cmV2ZXJzYWguY29t&hmac=774a4a4afece2f639b0670aa64bbee2b74c28353839cc1d4bc34a2b1ca919bec") format("woff");
+  src: url("https://fonts.shopifycdn.com/source_sans_pro/sourcesanspro_n7.6e4bcf66f55051b65aaa4326e84ae8a102d8133f.woff2?h1=cmV2ZXJzYWguY29t&hmac=9371ed25c65f299171a757d3c823bfb502faab7fda4bb60dbf8ddda11a37660c") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_sans_pro/sourcesanspro_n7.ecfda8da3666ac3b2cc9a74e4ec40e786a00309a.woff?h1=cmV2ZXJzYWguY29t&hmac=9688cc31a4f8f664cf0899a285a77d555d8035d955337079de23c704356afa89") format("woff");
 }
 
 @font-face {
-  font-family: Asap;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/pt_serif/ptserif_n4.fd0456bc6921cb59cbc84902bc88673986e44f6c.woff2?h1=cmV2ZXJzYWguY29t&hmac=bf2437c54db7b0fcb237f101097846e2788b1f7a19235ad0584e67223bf3e12a") format("woff2"),
+       url("https://fonts.shopifycdn.com/pt_serif/ptserif_n4.17e4b35390e29165ba0345f0fb7b617f96ab09d0.woff?h1=cmV2ZXJzYWguY29t&hmac=fb5a6507801516506354cb8f5820f265ab6705419149c17b2e5ed92e3d934bb1") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/source_sans_pro/sourcesanspro_n7.6e4bcf66f55051b65aaa4326e84ae8a102d8133f.woff2?h1=cmV2ZXJzYWguY29t&hmac=9371ed25c65f299171a757d3c823bfb502faab7fda4bb60dbf8ddda11a37660c") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_sans_pro/sourcesanspro_n7.ecfda8da3666ac3b2cc9a74e4ec40e786a00309a.woff?h1=cmV2ZXJzYWguY29t&hmac=9688cc31a4f8f664cf0899a285a77d555d8035d955337079de23c704356afa89") format("woff");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/pt_serif/ptserif_n7.d1f795d9134488f112afb7e7a5bc8ee2daf83c9f.woff2?h1=cmV2ZXJzYWguY29t&hmac=539c83cfb77ac45ca66dffeeb186bb0b75e02ebc58fea98984ac9b872c8d74ea") format("woff2"),
+       url("https://fonts.shopifycdn.com/pt_serif/ptserif_n7.a4f015ce5d37b5a952640677fdf993f37eb6f383.woff?h1=cmV2ZXJzYWguY29t&hmac=793d9e0b9035ac959a0f52941d07d5f1f38834b3f2862dac70bcf4cc8850fe1e") format("woff");
+}
+
+@font-face {
+  font-family: "PT Serif";
   font-weight: 400;
   font-style: italic;
-  src: url("https://fonts.shopifycdn.com/asap/asap_i4.bc13ea4c17e8bbc85d105173e9e849da88153cef.woff2?h1=cmV2ZXJzYWguY29t&hmac=e6b2af5d240ea6c71e68def0e360230f5f17dd6ebae0b346e272daf8cd267aa7") format("woff2"),
-       url("https://fonts.shopifycdn.com/asap/asap_i4.922d04686f6fd7a58987f2d7a529faa245774fa3.woff?h1=cmV2ZXJzYWguY29t&hmac=c54aedec7d4439433c9e20a5602a07b2545def79f46f30469686a1830a5496b6") format("woff");
+  src: url("https://fonts.shopifycdn.com/pt_serif/ptserif_i4.3bb7f32772fab64b8f51575235b11d643662a081.woff2?h1=cmV2ZXJzYWguY29t&hmac=ade1cfaec3156a18fa6336ba15d27359a5112fa3c29d8dfef3e6e8dbf5e41c1d") format("woff2"),
+       url("https://fonts.shopifycdn.com/pt_serif/ptserif_i4.6b54f8ca20055710cc6ed0c56ca4cf8d3bfa8042.woff?h1=cmV2ZXJzYWguY29t&hmac=8c888f2c5f67ef1eeda694339f8d1dc4755439c6a27e98ed48150b4d7dd9390d") format("woff");
 }
 
 @font-face {
-  font-family: Asap;
+  font-family: "PT Serif";
   font-weight: 700;
   font-style: italic;
-  src: url("https://fonts.shopifycdn.com/asap/asap_i7.7806a4753573be6c818b023b7f9ffa910899b1d7.woff2?h1=cmV2ZXJzYWguY29t&hmac=8f8a5ecea7cca190433cfac30b5c55992d8719bbb299b72b34348b0273a0edce") format("woff2"),
-       url("https://fonts.shopifycdn.com/asap/asap_i7.02caacb45ef50301684fe63e89767b6abaea8391.woff?h1=cmV2ZXJzYWguY29t&hmac=41fa34d33ac6e048f32e31d2d280279d442deee4b77217a184eb405bd04bce44") format("woff");
+  src: url("https://fonts.shopifycdn.com/pt_serif/ptserif_i7.896088268768fabcc085e09d6a96dc60aeef71e7.woff2?h1=cmV2ZXJzYWguY29t&hmac=8158fc1ff4eb480b27a6ad97cb9bc060cf095caeb09a99d643fd6efe4cf0fd2f") format("woff2"),
+       url("https://fonts.shopifycdn.com/pt_serif/ptserif_i7.6db03cbdc6803240664dbc623def89af2a255fd9.woff?h1=cmV2ZXJzYWguY29t&hmac=e3ac4bc313bffe5eee4bc7daf31fc3e25c3594feae2ca90571864bc24ed5f87f") format("woff");
 }
 
 @font-face {
-  font-family: Poppins;
-  font-weight: 700;
+  font-family: "Source Sans Pro";
+  font-weight: 900;
   font-style: normal;
-  src: url("https://fonts.shopifycdn.com/poppins/poppins_n7.58aca33913fc6666cc9e8a53f6b16ec5c3c05a3f.woff2?h1=cmV2ZXJzYWguY29t&hmac=5d447305128edb38cc5a86d766b4674408b31660e14d3b4efcfcc7947b27b3ce") format("woff2"),
-       url("https://fonts.shopifycdn.com/poppins/poppins_n7.59016f931f3f39434d2e458fba083eb7db7a07d9.woff?h1=cmV2ZXJzYWguY29t&hmac=e43d424e11d5f2686d689b190804c9589d16b97647bc7bcfb0f7ffd1ac4adac3") format("woff");
+  src: url("https://fonts.shopifycdn.com/source_sans_pro/sourcesanspro_n9.6487c308a4afe2c0aa488c6f8b434f111d53482a.woff2?h1=cmV2ZXJzYWguY29t&hmac=541cf4773f8311fbdd552dc20a1bc15f170a2cfb9cfcc3cd8c84b7ad496dabb5") format("woff2"),
+       url("https://fonts.shopifycdn.com/source_sans_pro/sourcesanspro_n9.0d8c0db06389d06ed1e14082e9f80c9a430fbb4c.woff?h1=cmV2ZXJzYWguY29t&hmac=7b9cb50eaba9a4683d2ebdb0ea73f66f2c708117636c067d6efcf8489b2bf2f5") format("woff");
 }
 
 
 // Body Font
-$bodyFontStack: Asap, sans-serif;
+$bodyFontStack: "PT Serif", serif;
 $bodyFontWeight: 400;
 $bodyFontWeightBold: 700;
 $bodyFontStyle: normal;
@@ -356,15 +356,15 @@ $bodyFontItalic: italic;
 $baseFontSize: 17px;
 
 // Header Font
-$headerFontStack: Poppins, sans-serif;
-$headerFontWeight: 400;
+$headerFontStack: "Source Sans Pro", sans-serif;
+$headerFontWeight: 700;
 $headerFontStyle: normal;
 $headerBaseFontSize: 32px;
 
 // Navigation and buttons
-$accentFontStack: Poppins, sans-serif;
-$accentFontWeight: 400;
-$accentFontWeightBold: 700;
+$accentFontStack: "Source Sans Pro", sans-serif;
+$accentFontWeight: 700;
+$accentFontWeightBold: 900;
 $accentFontStyle: normal;
 $accentFontSize: 16px;
 
@@ -3148,4 +3148,3 @@ input.cart__quantity-selector {
 [data-shopify-buttoncontainer] {
   justify-content: flex-end;
 }
-/*================ Parallax Effect ================*/

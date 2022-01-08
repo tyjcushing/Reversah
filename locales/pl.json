@@ -108,7 +108,7 @@
   "collections": {
     "general": {
       "title": "Kolekcje",
-      "no_matches": "Niestety, w tej kolekcji nie ma produktów",
+      "no_matches": "Niestety w tej kolekcji nie ma produktów",
       "link_title": "Przeglądaj naszą kolekcję {{ title }}"
     },
     "sorting": {

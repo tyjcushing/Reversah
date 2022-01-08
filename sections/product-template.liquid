@@ -37,7 +37,6 @@
   <div class="product-single">
     <div class="grid product-single__hero">
       <div class="grid__item post-large--one-half">
-        
 
         {% if section.settings.product_thumbnails_position == 'below' or product.images.size < 2 %}
 
@@ -158,7 +157,7 @@
           <meta itemprop="priceCurrency" content="{{ cart.currency.iso_code }}">
           <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
 
-          <div class="product-single__prices{% if shop.taxes_included or shop.shipping_policy.body != blank %} product-single__prices--policy-enabled{% endif %}">
+          <div class="product-single__prices{% if cart.taxes_included or shop.shipping_policy.body != blank %} product-single__prices--policy-enabled{% endif %}">
             <span id="PriceA11y" class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
             <span id="ProductPrice" class="product-single__price" itemprop="price" content="{{ product.price | divided_by: 100.00 }}">
               {{ product.price | money }}
@@ -180,9 +179,9 @@
 
           </div>
 
-          {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+          {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
             <div class="product-single__policies{% if product.has_only_default_variant and section.settings.product_quantity_enable == false %} product__policies--no-dropdowns{% endif %} rte">
-              {%- if shop.taxes_included -%}
+              {%- if cart.taxes_included -%}
                 {{ 'products.general.include_taxes' | t }}
               {%- endif -%}
               {%- if shop.shipping_policy.body != blank -%}
@@ -191,7 +190,8 @@
             </div>
           {%- endif -%}
 
-          {% form 'product', product, class:productform_class %}
+          {% form 'product', product, class: productform_class %}
+            {{ form | payment_terms }}
             <select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
               {% for variant in product.variants %}
                 {% if variant.available %}
@@ -205,18 +205,7 @@
                 {% endif %}
               {% endfor %}
             </select>
-			<p class="line-item-property__field">
-  				<label for="name-none-if-you-do-not-want-any-name-to-be-put">Name (none if you do not want any name to be put)</label>
-  				<input required class="required" id="name-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Name (none if you do not want any name to be put)]">
-			</p>
-            <p class="line-item-property__field">
-  			<label for="title-none-if-you-do-not-want-any-name-to-be-put">Title (none if you do not want any name to be put)</label>
-  			<input required class="required" id="title-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Title (none if you do not want any name to be put)]">
-			</p>
-          	<p class="line-item-property__field">
-  				<label for="rank-none-if-you-do-not-want-any-name-to-be-put">Rank (none if you do not want any name to be put)</label>
-			  	<input required class="required" id="rank-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Rank (none if you do not want any name to be put)]">
-			</p>
+
             <div class="product-single__quantity{% unless section.settings.product_quantity_enable %} is-hidden{% endunless %}">
               <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
               <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
@@ -318,7 +307,7 @@
         "nb": "Vis produktleverandør",
         "nl": "Productleverancier weergeven",
         "pl": "Pokaż dostawcę produktu",
-        "pt-BR": "Exibir o fornecedor do produto",
+        "pt-BR": "Mostrar o fabricante do produto",
         "pt-PT": "Mostrar o fornecedor do produto",
         "sv": "Visa produktsäljare",
         "th": "แสดงผู้ขายสินค้า",
@@ -345,7 +334,7 @@
         "nb": "Vis mengdevelger",
         "nl": "Hoeveelheidskiezer weergeven",
         "pl": "Pokaż selektor ilości",
-        "pt-BR": "Exibir seletor de quantidade",
+        "pt-BR": "Mostrar seletor de quantidade",
         "pt-PT": "Mostrar um seletor de quantidade",
         "sv": "Visa kvantitetsväljare",
         "th": "แสดงตัวเลือกจำนวน",
@@ -586,7 +575,7 @@
         "nb": "Vis en fane ved siden av produktbeskrivelsen",
         "nl": "Laat tabblad zien naast je productbeschrijving",
         "pl": "Pokaż kartę obok opisu produktu",
-        "pt-BR": "Exibir uma aba ao lado da descrição do seu produto",
+        "pt-BR": "Mostrar uma aba ao lado da descrição do seu produto",
         "pt-PT": "Mostrar um separador ao lado da sua descrição do produto",
         "sv": "Visa en flik intill produktbeskrivningen",
         "th": "แสดงแท็บถัดจากคำอธิบายสินค้าของคุณ",
@@ -717,7 +706,7 @@
         "nb": "Vis dynamisk knapp for å gå til kassen",
         "nl": "Dynamische checkoutknop weergeven",
         "pl": "Pokaż dynamiczny przycisk realizacji zakupu",
-        "pt-BR": "Exibir botão de checkout dinâmico",
+        "pt-BR": "Mostrar botão de checkout dinâmico",
         "pt-PT": "Mostrar o botão dinâmico de finalização da compra",
         "sv": "Visa dynamiska utcheckningsknappar",
         "th": "แสดงปุ่มชำระเงินแบบไดนามิก",
@@ -775,7 +764,7 @@
         "tr": "Varyasyon seçici ve düğme boyutu",
         "vi": "Trình chọn mẫu mã và cỡ nút",
         "zh-CN": "多属性选择器和按钮大小",
-        "zh-TW": "子類選項選擇器和按鈕尺寸"
+        "zh-TW": "子類選擇器和按鈕尺寸"
       },
       "options": [
         {

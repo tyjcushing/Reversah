@@ -30,6 +30,7 @@
   <!-- CSS ================================================== -->
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {% render 'css-variables' %}
 
   <script>
     window.theme = window.theme || {};
@@ -61,7 +62,30 @@
         bpSmall: false
       },
       moneyFormat: {{ shop.money_format | json }}
-    }
+    };
+
+    {%- if template == 'collection' -%}
+      {%- if current_tags -%}
+        {%- capture tag_handles -%}
+            {%- for tag in current_tags -%}
+              {{- tag | handle | append: '|' -}}
+            {%- endfor -%}
+        {%- endcapture -%}
+      {%- endif -%}
+
+      theme.breadcrumbs = {
+        collection: {
+          title: {{ collection.title | json }},
+          link: "{{ shop.url }}{{ collection.url }}{%- if current_tags -%}/{{- tag_handles | split: '|' | join: '+' -}}{%- endif -%}"
+        }
+      };
+      sessionStorage.setItem("breadcrumb", JSON.stringify(theme.breadcrumbs.collection));
+
+    {%- elsif template != 'product' -%}
+      if (sessionStorage.getItem("breadcrumb")) {
+        sessionStorage.removeItem("breadcrumb")
+      }
+    {%- endif -%}
 
     document.documentElement.className = document.documentElement.className.replace('no-js', 'supports-js');
   </script>
@@ -80,9 +104,6 @@
     {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
   {% endif %}
 
-<!--Gem_Page_Header_Script-->
-{% include 'gem-app-header-scripts' %}
-<!--End_Gem_Page_Header_Script-->
 </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ request.page_type | handle }}">
@@ -116,8 +137,5 @@
   </ul>
 
   {{ 'theme.js' | asset_url | script_tag }}
-<!--Gem_Page_Footer_Script-->
-{% include 'gem-app-footer-scripts' %}
-<!--End_Gem_Page_Footer_Script-->
 </body>
 </html>

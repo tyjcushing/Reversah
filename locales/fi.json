@@ -190,7 +190,7 @@
       "cancelled_reason": "Syy: {{ reason }}",
       "billing_address": "Laskutusosoite",
       "payment_status": "Maksun tila",
-      "shipping_address": "Toimitusosoite",
+      "shipping_address": "Toimitus­osoite",
       "fulfillment_status": "Jakelun tila",
       "discount": "Alennus",
       "shipping": "Toimitus",
