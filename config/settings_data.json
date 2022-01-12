@@ -246,7 +246,7 @@
       "164175418377410082": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<h2>Follow Us On<\/h2>\n<div class=\"left\" style=\"float: left; width: 50%;\">\n\t<a href=\"https:\/\/www.instagram.com\/vicereversah\/\">Instagram<\/a>\n\t<br>\n\t<a href=\"https:\/\/www.tiktok.com\/@reversah\">Tiktok<\/a>\n\t<br>\n\t<a href=\"https:\/\/www.twitch.tv\/reversah\">Twitch<\/a>\n\t<br>\n<\/div>\n\n\n<div style=\"float: right; width: 50%;\">\n<blockquote class=\"tiktok-embed\" cite=\"https:\/\/www.tiktok.com\/@reversah\/video\/7051658644860980527\" data-video-id=\"7051658644860980527\" style=\"max-width: 605px;min-width: 325px;\"> <section> <a target=\"_blank\" title=\"@reversah\" href=\"https:\/\/www.tiktok.com\/@reversah\">@reversah<\/a> this was kinda an adventure <a title=\"gamergirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/gamergirl\">#gamergirl<\/a> <a title=\"egirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/egirl\">#egirl<\/a> <a title=\"valorantart\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantart\">#valorantart<\/a> <a title=\"valorantbanners\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantbanners\">#valorantbanners<\/a> <a title=\"valorantlanyards\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantlanyards\">#valorantlanyards<\/a> <a title=\"valorant\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorant\">#valorant<\/a> <a title=\"valorantfunny\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantfunny\">#valorantfunny<\/a> <a target=\"_blank\" title=\"♬ Aesthetic - Devonte Mayo\" href=\"https:\/\/www.tiktok.com\/music\/Aesthetic-6801406368763873281\">♬ Aesthetic - Devonte Mayo<\/a> <\/section> <\/blockquote> <script async=\"\" src=\"https:\/\/www.tiktok.com\/embed.js\"><\/script>\n<\/div>"
+          "custom_html": "<h2>Follow Us On<\/h2>\n<div class=\"left\" style=\"float: left;\">\n\t<a href=\"https:\/\/www.instagram.com\/vicereversah\/\">Instagram<\/a>\n\t<br>\n\t<a href=\"https:\/\/www.tiktok.com\/@reversah\">Tiktok<\/a>\n\t<br>\n\t<a href=\"https:\/\/www.twitch.tv\/reversah\">Twitch<\/a>\n\t<br>\n<\/div>"
         }
       },
       "1641926353f9b3d8b2": {
@@ -267,12 +267,19 @@
         "settings": {
           "custom_html": "<div><\/div>"
         }
+      },
+      "1641952903c65a7a3f": {
+        "type": "custom-html",
+        "settings": {
+          "custom_html": "<div style=\"\">\n<blockquote class=\"tiktok-embed\" cite=\"https:\/\/www.tiktok.com\/@reversah\/video\/7051658644860980527\" data-video-id=\"7051658644860980527\" style=\"max-width: 605px;min-width: 325px;\"> <section> <a target=\"_blank\" title=\"@reversah\" href=\"https:\/\/www.tiktok.com\/@reversah\">@reversah<\/a> this was kinda an adventure <a title=\"gamergirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/gamergirl\">#gamergirl<\/a> <a title=\"egirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/egirl\">#egirl<\/a> <a title=\"valorantart\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantart\">#valorantart<\/a> <a title=\"valorantbanners\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantbanners\">#valorantbanners<\/a> <a title=\"valorantlanyards\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantlanyards\">#valorantlanyards<\/a> <a title=\"valorant\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorant\">#valorant<\/a> <a title=\"valorantfunny\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantfunny\">#valorantfunny<\/a> <a target=\"_blank\" title=\"♬ Aesthetic - Devonte Mayo\" href=\"https:\/\/www.tiktok.com\/music\/Aesthetic-6801406368763873281\">♬ Aesthetic - Devonte Mayo<\/a> <\/section> <\/blockquote> <script async=\"\" src=\"https:\/\/www.tiktok.com\/embed.js\"><\/script>\n<\/div>"
+        }
       }
     },
     "content_for_index": [
       "slider",
       "1641926353f9b3d8b2",
       "1641752130d887e267",
+      "1641952903c65a7a3f",
       "164175418377410082",
       "16419312320bd7425b",
       "newsletter"
