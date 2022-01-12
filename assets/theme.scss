@@ -3152,14 +3152,20 @@ input.cart__quantity-selector {
 
 ul.site-nav li {
 	vertical-align: middle;
+  position: relative;
+  overflow: hidden;
 }
 
 ul.site-nav li a {
   	border-style: solid;
   	border-color: #4F887F;
   	background-color: #4F887F;
-  	padding-left: 2.5vw;
-  	padding-right: 2.5vw;
+  	padding-left: 2.3vw;
+  	padding-right: 2.3vw;
+}
+
+ul.site-nav li a:hover {
+  background-color: #31544f;
 }
 
 ul.site-nav li:nth-child(4) a {
