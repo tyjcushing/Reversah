@@ -246,7 +246,7 @@
       "164175418377410082": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<h2>Follow Us On<\/h2>\n<div class=\"left\" style=\"float: left;\">\n\t<a href=\"https:\/\/www.instagram.com\/vicereversah\/\">Instagram<\/a>\n\t<br>\n\t<a href=\"https:\/\/www.tiktok.com\/@reversah\">Tiktok<\/a>\n\t<br>\n\t<a href=\"https:\/\/www.twitch.tv\/reversah\">Twitch<\/a>\n\t<br>\n<\/div>"
+          "custom_html": "<h3>Follow Us On<\/h3>\n<div><h4>Instagram: <a href=\"https:\/\/www.instagram.com\/vicereversah\/\" style=\"vertical-align: center;\">@vicereversah <\/a> <\/h4><\/div>\n\n<div>\n<h3>TikTok: <a href=\"https:\/\/www.tiktok.com\/@reversah\" style=\"vertical-align: center;\">@reversah <\/a>\n<\/h3> <\/div>"
         }
       },
       "1641926353f9b3d8b2": {
