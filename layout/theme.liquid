@@ -107,16 +107,6 @@
 </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ request.page_type | handle }}">
-
-  {% section 'header' %}
-
-  <main class="wrapper main-content" role="main">
-    <div class="grid">
-        <div class="grid__item">
-          {{ content_for_layout }}
-        </div>
-    </div>
-  </main>
 <meta charset="UTF-8">
     <title>Agent Select</title>
     <style>
@@ -281,6 +271,16 @@
 
     </script>
 </body>
+  {% section 'header' %}
+
+  <main class="wrapper main-content" role="main">
+    <div class="grid">
+        <div class="grid__item">
+          {{ content_for_layout }}
+        </div>
+    </div>
+  </main>
+
   {% section 'footer' %}
 
   {%- if request.page_type == 'index' -%}
