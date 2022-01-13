@@ -30,8 +30,66 @@
   <!-- CSS ================================================== -->
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
-  {% render 'css-variables' %}
-    <meta charset="UTF-8">
+  {% render 'css-variables' %}  
+
+  <script>
+    window.theme = window.theme || {};
+
+    var theme = {
+      strings: {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        zoomClose: {{ "products.zoom.close" | t | json }},
+        zoomPrev: {{ "products.zoom.prev" | t | json }},
+        zoomNext: {{ "products.zoom.next" | t | json }},
+        addressError: {{ 'map.errors.address_error' | t | json }},
+        addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+        authError: {{ 'map.errors.auth_error_html' | t | json }}
+      },
+      settings: {
+        // Adding some settings to allow the editor to update correctly when they are changed
+        enableWideLayout: {{ settings.enable_wide_layout }},
+        typeAccentTransform: {{ settings.type_accent_transform }},
+        typeAccentSpacing: {{ settings.type_accent_spacing }},
+        baseFontSize: '{{ settings.type_base_size }}',
+        headerBaseFontSize: '{{ settings.type_header_size }}',
+        accentFontSize: '{{ settings.type_accent_size }}'
+      },
+      variables: {
+        mediaQueryMedium: 'screen and (max-width: 768px)',
+        bpSmall: false
+      },
+      moneyFormat: {{ shop.money_format | json }}
+    };
+
+    {%- if template == 'collection' -%}
+      {%- if current_tags -%}
+        {%- capture tag_handles -%}
+            {%- for tag in current_tags -%}
+              {{- tag | handle | append: '|' -}}
+            {%- endfor -%}
+        {%- endcapture -%}
+      {%- endif -%}
+
+      theme.breadcrumbs = {
+        collection: {
+          title: {{ collection.title | json }},
+          link: "{{ shop.url }}{{ collection.url }}{%- if current_tags -%}/{{- tag_handles | split: '|' | join: '+' -}}{%- endif -%}"
+        }
+      };
+      sessionStorage.setItem("breadcrumb", JSON.stringify(theme.breadcrumbs.collection));
+
+    {%- elsif template != 'product' -%}
+      if (sessionStorage.getItem("breadcrumb")) {
+        sessionStorage.removeItem("breadcrumb")
+      }
+    {%- endif -%}
+
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'supports-js');
+  </script>
+<meta charset="UTF-8">
     <title>Agent Select</title>
     <style>
         .highlight {
@@ -195,64 +253,6 @@
 
     </script>
 </body>
-  <script>
-    window.theme = window.theme || {};
-
-    var theme = {
-      strings: {
-        addToCart: {{ 'products.product.add_to_cart' | t | json }},
-        soldOut: {{ 'products.product.sold_out' | t | json }},
-        unavailable: {{ 'products.product.unavailable' | t | json }},
-        zoomClose: {{ "products.zoom.close" | t | json }},
-        zoomPrev: {{ "products.zoom.prev" | t | json }},
-        zoomNext: {{ "products.zoom.next" | t | json }},
-        addressError: {{ 'map.errors.address_error' | t | json }},
-        addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
-        addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
-        authError: {{ 'map.errors.auth_error_html' | t | json }}
-      },
-      settings: {
-        // Adding some settings to allow the editor to update correctly when they are changed
-        enableWideLayout: {{ settings.enable_wide_layout }},
-        typeAccentTransform: {{ settings.type_accent_transform }},
-        typeAccentSpacing: {{ settings.type_accent_spacing }},
-        baseFontSize: '{{ settings.type_base_size }}',
-        headerBaseFontSize: '{{ settings.type_header_size }}',
-        accentFontSize: '{{ settings.type_accent_size }}'
-      },
-      variables: {
-        mediaQueryMedium: 'screen and (max-width: 768px)',
-        bpSmall: false
-      },
-      moneyFormat: {{ shop.money_format | json }}
-    };
-
-    {%- if template == 'collection' -%}
-      {%- if current_tags -%}
-        {%- capture tag_handles -%}
-            {%- for tag in current_tags -%}
-              {{- tag | handle | append: '|' -}}
-            {%- endfor -%}
-        {%- endcapture -%}
-      {%- endif -%}
-
-      theme.breadcrumbs = {
-        collection: {
-          title: {{ collection.title | json }},
-          link: "{{ shop.url }}{{ collection.url }}{%- if current_tags -%}/{{- tag_handles | split: '|' | join: '+' -}}{%- endif -%}"
-        }
-      };
-      sessionStorage.setItem("breadcrumb", JSON.stringify(theme.breadcrumbs.collection));
-
-    {%- elsif template != 'product' -%}
-      if (sessionStorage.getItem("breadcrumb")) {
-        sessionStorage.removeItem("breadcrumb")
-      }
-    {%- endif -%}
-
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'supports-js');
-  </script>
-
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}
 
