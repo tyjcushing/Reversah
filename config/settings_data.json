@@ -1,6 +1,6 @@
 {
   "current": {
-    "enable_wide_layout": false,
+    "enable_wide_layout": true,
     "color_topbar_bg": "#96D5CA",
     "color_body_bg": "#ffffff",
     "color_footer_bg": "rgba(0,0,0,0)",
@@ -51,7 +51,7 @@
           "left_aligned_logo": false,
           "show_header_lines": false,
           "show_announcement": true,
-          "header_text": "Announce something here",
+          "header_text": "valorant lanyards released February 1st!",
           "announcement_link": ""
         }
       },
@@ -155,7 +155,7 @@
         ],
         "settings": {
           "slider_height": "small",
-          "slider_autorotate": false,
+          "slider_autorotate": true,
           "slider_autorotate_rate": 5,
           "slider_home_transition": "slide",
           "text_size": "medium"
