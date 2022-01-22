@@ -234,7 +234,7 @@
         "settings": {
           "heading": "Subscribe to our Mailing List",
           "subtext": "<p>Be the first to know about New Designs, the Latest Products, and stay up to date on Current News about my channel!<\/p>",
-          "color_bg": "#eaebea"
+          "color_bg": "#ffffff"
         }
       },
       "1641752130d887e267": {
@@ -265,13 +265,19 @@
       "16419312320bd7425b": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<div><\/div>"
+          "custom_html": "<div>\n<style>\n.newsletter-content-wrapper {\nbackground: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQSXNoNTKtOOhi2GneIcdbdeZmcuVt3I4WlgEp2IYv2PhrAT4g0gUxM_X_I91Rj5tWnXw&usqp=CAU');\nbackground-position: center;\nbackground-repeat: no-repeat;\nbackground-size: cover;\n}\n\n.newsletter-section .section-header__title-spacing{\ntext-align: center;\n}\n.newsletter-content{\ntext-align: center;\n}\n<\/style>\n<\/div>"
         }
       },
       "1641952903c65a7a3f": {
         "type": "custom-html",
         "settings": {
           "custom_html": "<div style=\"\">\n<blockquote class=\"tiktok-embed\" cite=\"https:\/\/www.tiktok.com\/@reversah\/video\/7051658644860980527\" data-video-id=\"7051658644860980527\" style=\"max-width: 605px;min-width: 325px;\"> <section> <a target=\"_blank\" title=\"@reversah\" href=\"https:\/\/www.tiktok.com\/@reversah\">@reversah<\/a> this was kinda an adventure <a title=\"gamergirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/gamergirl\">#gamergirl<\/a> <a title=\"egirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/egirl\">#egirl<\/a> <a title=\"valorantart\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantart\">#valorantart<\/a> <a title=\"valorantbanners\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantbanners\">#valorantbanners<\/a> <a title=\"valorantlanyards\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantlanyards\">#valorantlanyards<\/a> <a title=\"valorant\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorant\">#valorant<\/a> <a title=\"valorantfunny\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantfunny\">#valorantfunny<\/a> <a target=\"_blank\" title=\"♬ Aesthetic - Devonte Mayo\" href=\"https:\/\/www.tiktok.com\/music\/Aesthetic-6801406368763873281\">♬ Aesthetic - Devonte Mayo<\/a> <\/section> <\/blockquote> <script async=\"\" src=\"https:\/\/www.tiktok.com\/embed.js\"><\/script>\n<\/div>"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false
         }
       }
     },
