@@ -246,7 +246,7 @@
       "164175418377410082": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<h1>Follow Us On<\/h1>\n<div style=\"width: 30%;\">\n\t<a href=\"https:\/\/www.tiktok.com\/@reversah\" style=\"vertical-align: center;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/TikTok_Website_Button.png?v=1642985878\"><\/a>\n\t<a href=\"https:\/\/discord.gg\/N8f69NZq\" style=\"vertical-align: center;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/Discord_Website_Button.png?v=1642985878\"><\/a>\n\t<a href=\"https:\/\/www.instagram.com\/vicereversah\/\" style=\"vertical-align: center;\">\n\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/Instagram_Website_Button.png?v=1642985878\"><\/a>\n\t<a href=\"https:\/\/www.twitch.tv\/reversah\" style=\"vertical-align: center;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/Twitch_Website_Button.png?v=1642985881\"><\/a>\n<\/div>"
+          "custom_html": "<h1>Follow Us On<\/h1>\n<div style=\"max-width: 500px;\">\n\t<a href=\"https:\/\/www.tiktok.com\/@reversah\" style=\"vertical-align: center;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/TikTok_Website_Button.png?v=1642985878\"><\/a>\n\t<a href=\"https:\/\/discord.gg\/N8f69NZq\" style=\"vertical-align: center;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/Discord_Website_Button.png?v=1642985878\"><\/a>\n\t<a href=\"https:\/\/www.instagram.com\/vicereversah\/\" style=\"vertical-align: center;\">\n\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/Instagram_Website_Button.png?v=1642985878\"><\/a>\n\t<a href=\"https:\/\/www.twitch.tv\/reversah\" style=\"vertical-align: center;\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/Twitch_Website_Button.png?v=1642985881\"><\/a>\n\n\t<div style=\"\">\n<blockquote class=\"tiktok-embed\" cite=\"https:\/\/www.tiktok.com\/@reversah\/video\/7051658644860980527\" data-video-id=\"7051658644860980527\" style=\"max-width: 605px;min-width: 325px;\"> <section> <a target=\"_blank\" title=\"@reversah\" href=\"https:\/\/www.tiktok.com\/@reversah\">@reversah<\/a> this was kinda an adventure <a title=\"gamergirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/gamergirl\">#gamergirl<\/a> <a title=\"egirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/egirl\">#egirl<\/a> <a title=\"valorantart\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantart\">#valorantart<\/a> <a title=\"valorantbanners\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantbanners\">#valorantbanners<\/a> <a title=\"valorantlanyards\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantlanyards\">#valorantlanyards<\/a> <a title=\"valorant\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorant\">#valorant<\/a> <a title=\"valorantfunny\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantfunny\">#valorantfunny<\/a> <a target=\"_blank\" title=\"♬ Aesthetic - Devonte Mayo\" href=\"https:\/\/www.tiktok.com\/music\/Aesthetic-6801406368763873281\">♬ Aesthetic - Devonte Mayo<\/a> <\/section> <\/blockquote> <script async=\"\" src=\"https:\/\/www.tiktok.com\/embed.js\"><\/script>\n<\/div>\n<\/div>"
         }
       },
       "1641926353f9b3d8b2": {
@@ -268,12 +268,6 @@
           "custom_html": "<div>\n<style>\n.newsletter-content-wrapper {\nbackground: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcQSXNoNTKtOOhi2GneIcdbdeZmcuVt3I4WlgEp2IYv2PhrAT4g0gUxM_X_I91Rj5tWnXw&usqp=CAU');\nbackground-position: center;\nbackground-repeat: no-repeat;\nbackground-size: cover;\n}\n\n.newsletter-section .section-header__title-spacing{\ntext-align: center;\n}\n.newsletter-content{\ntext-align: center;\n}\n<\/style>\n<\/div>"
         }
       },
-      "1641952903c65a7a3f": {
-        "type": "custom-html",
-        "settings": {
-          "custom_html": "<div style=\"float:right; width: 50%; padding-top: 100px\">\n<blockquote class=\"tiktok-embed\" cite=\"https:\/\/www.tiktok.com\/@reversah\/video\/7051658644860980527\" data-video-id=\"7051658644860980527\" style=\"max-width: 605px;min-width: 325px;\"> <section> <a target=\"_blank\" title=\"@reversah\" href=\"https:\/\/www.tiktok.com\/@reversah\">@reversah<\/a> this was kinda an adventure <a title=\"gamergirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/gamergirl\">#gamergirl<\/a> <a title=\"egirl\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/egirl\">#egirl<\/a> <a title=\"valorantart\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantart\">#valorantart<\/a> <a title=\"valorantbanners\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantbanners\">#valorantbanners<\/a> <a title=\"valorantlanyards\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantlanyards\">#valorantlanyards<\/a> <a title=\"valorant\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorant\">#valorant<\/a> <a title=\"valorantfunny\" target=\"_blank\" href=\"https:\/\/www.tiktok.com\/tag\/valorantfunny\">#valorantfunny<\/a> <a target=\"_blank\" title=\"♬ Aesthetic - Devonte Mayo\" href=\"https:\/\/www.tiktok.com\/music\/Aesthetic-6801406368763873281\">♬ Aesthetic - Devonte Mayo<\/a> <\/section> <\/blockquote> <script async=\"\" src=\"https:\/\/www.tiktok.com\/embed.js\"><\/script>\n<\/div>"
-        }
-      },
       "cart-template": {
         "type": "cart-template",
         "settings": {
@@ -292,7 +286,6 @@
       "slider",
       "1641926353f9b3d8b2",
       "1641752130d887e267",
-      "1641952903c65a7a3f",
       "164175418377410082",
       "16419312320bd7425b",
       "newsletter"
