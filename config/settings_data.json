@@ -242,7 +242,7 @@
       "1641752130d887e267": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<style>\nh1{\ntext-align: center;\n}\nh2{\ntext-align: center;\n}\n.slides__btn {\n    display: inline-block;\n    background-color: rgba(255, 255, 255, 0.6);\n    border-color: rgba(255, 255, 255, 0.8);\n    border-style: solid;\n    border-width: 5\npx\n;\n    border-radius: 20%;\nmargin-top: 240px\n}\n<\/style>"
+          "custom_html": "<style>\nh1{\ntext-align: center;\n}\nh2{\ntext-align: center;\n}\n.slides__btn {\n    display: inline-block;\n    background-color: rgba(255, 255, 255, 0.6);\n    border-color: rgba(255, 255, 255, 0.8);\n    border-style: solid;\n    border-width: 5\npx\n;\n    border-radius: 20%;\nmargin-top: 240px\n}\n.header-bar__message, .header-message {\n    max-width: 100%;\n    overflow: hidden;\n    padding-left: 343\npx\n;\n    position: absolute;\n    text-transform: uppercase;\n    color: white;\n}\n<\/style>"
         }
       },
       "164175418377410082": {
@@ -275,16 +275,9 @@
         "settings": {
           "cart_notes_enable": false
         }
-      },
-      "1642924082b5256aa3": {
-        "type": "custom-html",
-        "settings": {
-          "custom_html": ""
-        }
       }
     },
     "content_for_index": [
-      "1642924082b5256aa3",
       "slider",
       "1641926353f9b3d8b2",
       "1641752130d887e267",
