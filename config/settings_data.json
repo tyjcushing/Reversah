@@ -134,9 +134,9 @@
               "overlay_opacity": 30,
               "color_text": "#ffffff",
               "text_alignment": "center",
-              "slide_heading": "Image slide",
-              "button_label": "",
-              "button_link": ""
+              "slide_heading": "",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/collections\/all"
             }
           },
           "402e08c5-2e07-49b2-a59b-766971520bb4": {
@@ -147,9 +147,9 @@
               "overlay_opacity": 30,
               "color_text": "#ffffff",
               "text_alignment": "center",
-              "slide_heading": "Image slide",
-              "button_label": "",
-              "button_link": ""
+              "slide_heading": "",
+              "button_label": "SHOP NOW",
+              "button_link": "shopify:\/\/collections\/all"
             }
           }
         },
