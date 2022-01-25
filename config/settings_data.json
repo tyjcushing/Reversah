@@ -242,7 +242,7 @@
       "1641752130d887e267": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<style type=\"text\/css\">\n\nh1{\ntext-align: center;\ntext-transform: uppercase;\n}\nh2{\ntext-align: center;\ntext-transform: uppercase;\n}\n\n.slides__btn {\n    display: inline-block;\n    background-color: rgba(255, 255, 255, 0.6);\n    border-color: rgba(255, 255, 255, 0.8);\n    border-style: solid;\n    border-width: 5px;\n    border-radius: 20%;\n    margin-top: 240px;\n}\n.header-bar__message, .header-message {\n    max-width: 100%; \n   overflow: hidden; \n   padding-left: 20vw;\n   position: absolute; \n   text-transform: uppercase; \n   color: white;\n}\n\n.header-bar {\ncolor: white;\n}\n\n<\/style>"
+          "custom_html": "<style type=\"text\/css\">\n\nh1{\ntext-align: center;\ntext-transform: uppercase;\n}\nh2{\ntext-align: center;\ntext-transform: uppercase;\n}\n\n.slides__btn {\n    display: inline-block;\n    background-color: rgba(255, 255, 255, 0.6);\n    border-color: rgba(255, 255, 255, 0.8);\n    border-style: solid;\n    border-width: 5px;\n    border-radius: 20%;\n    margin-top: 240px;\n}\n.header-bar__message, .header-message {\n    max-width: 100%; \n   overflow: hidden; \n   padding-left: 20vw;\n   position: absolute; \n   text-transform: uppercase; \n   color: white;\n}\n\n.header-bar {\ncolor: white;\n}\n\n.header-bar__search-input[type=search] {\n    text-transform: uppercase;\n}\n\n<\/style>"
         }
       },
       "164175418377410082": {
