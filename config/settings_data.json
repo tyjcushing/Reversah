@@ -72,10 +72,11 @@
             "settings": {
             }
           },
-          "footer-3": {
-            "type": "newsletter",
+          "dcc17aa0-f84e-428f-ab23-d3c933279811": {
+            "type": "text",
             "settings": {
-              "subtext": "<p>Sign up for the latest news, offers and styles<\/p>"
+              "title": "Contact us",
+              "richtext": "<p>Need Help?<br\/><br\/>Business Inquiries:<br\/>cory@reversah.com<\/p>"
             }
           },
           "36304fe9-17f8-47a8-95f2-f0331c9aa45a": {
@@ -89,7 +90,7 @@
         "block_order": [
           "footer-1",
           "footer-2",
-          "footer-3",
+          "dcc17aa0-f84e-428f-ab23-d3c933279811",
           "36304fe9-17f8-47a8-95f2-f0331c9aa45a"
         ],
         "settings": {
