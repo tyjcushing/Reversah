@@ -60,12 +60,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "blog",
-            "settings": {
-              "blog": "news"
-            }
-          },
           "footer-1": {
             "type": "menu",
             "settings": {
@@ -83,13 +77,20 @@
             "settings": {
               "subtext": "<p>Sign up for the latest news, offers and styles<\/p>"
             }
+          },
+          "36304fe9-17f8-47a8-95f2-f0331c9aa45a": {
+            "type": "text",
+            "settings": {
+              "title": "Legal",
+              "richtext": "<p>Reversah's Valorant Banners were created under Riot Games' \"Legal Jibber Jabber\" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.<\/p>"
+            }
           }
         },
         "block_order": [
-          "footer-0",
           "footer-1",
           "footer-2",
-          "footer-3"
+          "footer-3",
+          "36304fe9-17f8-47a8-95f2-f0331c9aa45a"
         ],
         "settings": {
           "show_methods_of_payment": true
@@ -123,37 +124,11 @@
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/all"
             }
-          },
-          "slider-2": {
-            "type": "image",
-            "settings": {
-              "alignment": "center center",
-              "overlay_opacity": 30,
-              "color_text": "#ffffff",
-              "text_alignment": "center",
-              "slide_heading": "",
-              "button_label": "SHOP NOW",
-              "button_link": "shopify:\/\/collections\/all"
-            }
-          },
-          "slider-3": {
-            "type": "image",
-            "settings": {
-              "alignment": "center center",
-              "overlay_opacity": 30,
-              "color_text": "#ffffff",
-              "text_alignment": "center",
-              "slide_heading": "",
-              "button_label": "SHOP NOW",
-              "button_link": "shopify:\/\/collections\/all"
-            }
           }
         },
         "block_order": [
           "slider-0",
-          "slider-1",
-          "slider-2",
-          "slider-3"
+          "slider-1"
         ],
         "settings": {
           "slider_height": "small",
