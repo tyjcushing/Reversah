@@ -103,7 +103,7 @@
           "slider-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Banner-in-a-row_1.png",
+              "image": "shopify:\/\/shop_images\/Untitled-1.png",
               "alignment": "center center",
               "overlay_opacity": 30,
               "color_text": "#ffffff",
@@ -116,7 +116,7 @@
           "slider-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Untitled_Artwork_18.png",
+              "image": "shopify:\/\/shop_images\/Untitled-2.png",
               "alignment": "center center",
               "overlay_opacity": 30,
               "color_text": "#ffffff",
@@ -125,11 +125,39 @@
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/all"
             }
+          },
+          "ec8b8b48-e633-4d7f-9e9a-68175930af81": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled-3.png",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "Image slide",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "402e08c5-2e07-49b2-a59b-766971520bb4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled-4.png",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "Image slide",
+              "button_label": "",
+              "button_link": ""
+            }
           }
         },
         "block_order": [
           "slider-0",
-          "slider-1"
+          "slider-1",
+          "ec8b8b48-e633-4d7f-9e9a-68175930af81",
+          "402e08c5-2e07-49b2-a59b-766971520bb4"
         ],
         "settings": {
           "slider_height": "small",
