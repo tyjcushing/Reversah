@@ -279,7 +279,7 @@
       "1643135072efca265b": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<h2>Live Streams<\/h2>\n\n<p style=\"text-align: center;\">Come and join me for streams where I design new banners and\nlanyards! I also play Valorant with viewers, so hop on in and say hi!<\/p>\n\n<script src=\"https:\/\/player.twitch.tv\/js\/embed\/v1.js\"><\/script>\n<div id=\"5253\"><\/div>\n<script type=\"text\/javascript\">\n  var options = {\n    width: 80%,\n    height: 30%,\n    channel: \"reversah\",\n    parent: [\"reversah.myshopify.com\", \"reversah.com\"]\n  };\n  var player = new Twitch.Player(\"5253\", options);\n  player.setVolume(0.5);\n<\/script>"
+          "custom_html": "<h2>Live Streams<\/h2>\n\n<p style=\"text-align: center;\">Come and join me for streams where I design new banners and\nlanyards! I also play Valorant with viewers, so hop on in and say hi!<\/p>\n\n<script src=\"https:\/\/player.twitch.tv\/js\/embed\/v1.js\"><\/script>\n<div id=\"5253\"><\/div>\n<script type=\"text\/javascript\">\n  var options = {\n    width: 960,\n    height: 540,\n    channel: \"reversah\",\n    parent: [\"reversah.myshopify.com\", \"reversah.com\"]\n  };\n  var player = new Twitch.Player(\"5253\", options);\n  player.setVolume(0.5);\n<\/script>"
         }
       }
     },
