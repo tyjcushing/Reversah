@@ -85,13 +85,20 @@
               "title": "Legal",
               "richtext": "<p>Reversah's Valorant Banners were created under Riot Games' \"Legal Jibber Jabber\" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.<\/p>"
             }
+          },
+          "908b10f0-951b-4fa9-a029-5d160b62f193": {
+            "type": "newsletter",
+            "settings": {
+              "subtext": "<p>Sign up for the latest news, offers and styles<\/p>"
+            }
           }
         },
         "block_order": [
           "footer-1",
           "footer-2",
           "dcc17aa0-f84e-428f-ab23-d3c933279811",
-          "36304fe9-17f8-47a8-95f2-f0331c9aa45a"
+          "36304fe9-17f8-47a8-95f2-f0331c9aa45a",
+          "908b10f0-951b-4fa9-a029-5d160b62f193"
         ],
         "settings": {
           "show_methods_of_payment": true
