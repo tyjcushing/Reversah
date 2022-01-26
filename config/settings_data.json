@@ -279,6 +279,12 @@
         "settings": {
           "custom_html": "<h2>Live Streams<\/h2>\n\n<p style=\"text-align: center;\">Come and join me for streams where I design new banners and\nlanyards! I also play Valorant with viewers, so hop on in and say hi!<\/p>\n\n<script src=\"https:\/\/player.twitch.tv\/js\/embed\/v1.js\"><\/script>\n<div id=\"5253\"><\/div>\n<script type=\"text\/javascript\">\n  var options = {\n    height: 400,\n    width: \"100%\",\n    channel: \"reversah\",\n    parent: [\"reversah.myshopify.com\", \"reversah.com\"]\n  };\n  var player = new Twitch.Player(\"5253\", options);\n  player.setVolume(0.5);\n<\/script>"
         }
+      },
+      "164316171577512c7b": {
+        "type": "custom-html",
+        "settings": {
+          "custom_html": "<style type=\"text\/css\">\n\n.bottom-bar {\n  width: 100%;\n  height: 50px;\n  padding-top: 10px;\n  background-color: #86B5A2;\n}\n\n.menu-items-bottom-bar {\n  float: left;\n}\n\n.search-bottom-bar {\n  float: right;\n}\n<\/style>\n\n<div> \n  <div class=\"menu-items-bottom-bar\"><a href=\"\/\" class=\"site-nav__link\" data-meganav-type=\"child\">Home<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/collections\/all\" class=\"site-nav__link\" data-meganav-type=\"child\">Shop<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/meet-the-team\" class=\"site-nav__link\" data-meganav-type=\"child\">About<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/gallery\" class=\"site-nav__link\" data-meganav-type=\"child\">Gallery<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/community\" class=\"site-nav__link\" data-meganav-type=\"child\">Reviews<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/help\" class=\"site-nav__link\" data-meganav-type=\"child\">Help<\/a><\/div>\n\n\n  <div class=\"search-bottom-bar\"><\/div>\n\n<\/div>\ninformation about your brand with customers."
+        }
       }
     },
     "content_for_index": [
@@ -287,7 +293,8 @@
       "164175418377410082",
       "16419312320bd7425b",
       "1643135072efca265b",
-      "newsletter"
+      "newsletter",
+      "164316171577512c7b"
     ],
     "blocks": {
       "10042746950867549768": {
