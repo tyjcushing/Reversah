@@ -283,27 +283,7 @@
       "1643162240ac72df9a": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<style type=\"text\/css\">\n  .review {\n    width: 33.3%;\n    float: left;\n    padding-top: 3%;\n    padding-left: 5%;\n  }\n\n  .review-image {\n    margin-left: 22%;\n    width: 35%;\n  }\n\n  .review-caption {\n    text-align: center;\n    width: 80%;\n    margin-bottom: 5%;\n    height: 40%;\n    padding-bottom:40%;\n\n  }\n<\/style>\n\n<h2>Customer Reviews<\/h2>\n<div style=\"width: 100%; padding-bottom: 46%;\">\n<div class=\"review\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/snowbesat88Chrisss_1.png?v=1643172956\" class=\"review-image\">\n  <p class=\"review-caption\">The banner looks amazing and sits\nPERFECTLY IN MY ROOM!!! Well done and\nunderstanding customer\nservice! Always looking to help out!<br>\n~ Christopher ~<\/p>\n<\/div>\n<div class=\"review\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/snowbesat88Chrisss_3.png?v=1643172956\" class=\"review-image\">\n  <p class=\"review-caption\">I really love the banner. I got the polyester\none and I found it so nice quality.\nThe details on the drawing is so nice and\nit feels good to have something custom to your\n name! All my friends around me love\nit and maybe I'll order another one for my partner.<br>\n~ Vaness ~<\/p>\n<\/div>\n<div class=\"review\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/snowbesat88Chrisss_2.png?v=1643172956\" class=\"review-image\">\n  <p class=\"review-caption\">Although it took a while to get my\nbanner, it was absolutely worth the wait. The\nquality is amazing, the amount of details and\ndesign on it is beautiful. I managed to\npersuade some of my friends to\nget their own :) <br>\n~ Ashley ~<\/p>\n<\/div>\n<\/div>"
-        }
-      },
-      "16431781962f03aca6": {
-        "type": "newsletter",
-        "settings": {
-          "heading": "Subscribe to our newsletter",
-          "subtext": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
-          "color_bg": "#eeeeee"
-        }
-      },
-      "16431782666a4f937a": {
-        "type": "custom-html",
-        "settings": {
-          "custom_html": "<p>hello<\/p>"
-        }
-      },
-      "16432451983784064e": {
-        "type": "custom-html",
-        "settings": {
-          "custom_html": "<style>\n\n  #custom-newsletter {\n    width: 100%;\n    background-color: rgba(238, 238, 238, 0.9);\n    background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/brim-sage.png?v=1643151158\");\n    background-size: cover;\n    background-repeat: no-repeat;\n    height:12%;\n  }\n\n  #subscribe {\n    background-color: #FA4454;\n    border-radius: 5px;\n    margin-left: 10px;\n  }\n<\/style>\n      <div id=\"custom-newsletter\" style=\"width: 100%; color: white; text-align: center; padding-top: 7%; padding-bottom: 7%;\">\n        <div style=\"width: 50%; text-align: center; margin-left: 25%;\">\n          <h2>\n            Stay Awesome\n          <\/h2>\n          <p>Be the first to know about new designs, the latest products, and stay up to date on current news about my channel!<\/p>\n      <\/div>\n        <div style=\"width: 50%; text-align: center;  margin-left: 25%;\">\n        <form method=\"post\" action=\"\/contact#contact_form\" id=\"contact_form\" accept-charset=\"UTF-8\" class=\"contact-form\">\n<input type=\"hidden\" name=\"form_type\" value=\"customer\"><input type=\"hidden\" name=\"utf8\" value=\"✓\">\n          \n          \n            <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter\">\n            <div class=\"input-group\">\n              <label for=\"Email\" class=\"visually-hidden\">Email<\/label>\n              <input type=\"email\" value=\"\" placeholder=\"Your email\" name=\"contact[email]\" id=\"Email\" class=\"input-group-field\" aria-label=\"Your email\" autocorrect=\"off\" autocapitalize=\"off\">\n              <span class=\"input-group-btn\">\n                <button type=\"submit\" class=\"btn\" name=\"commit\" id=\"subscribe\">Subscribe<\/button>\n              <\/span>\n            <\/div>\n        <\/form>\n        <\/div>\n  <\/div>"
+          "custom_html": "<style type=\"text\/css\">\n  .review {\n    width: 33.3%;\n    float: left;\n    padding-top: 3%;\n    padding-left: 5%;\n  }\n\n  .review-image {\n    margin-left: 22%;\n    width: 35%;\n  }\n\n  .review-caption {\n    text-align: center;\n    width: 80%;\n    margin-bottom: 5%;\n    height: 40%;\n    padding-bottom:1%;\n\n  }\n<\/style>\n\n<h2>Customer Reviews<\/h2>\n<div style=\"width: 100%; padding-bottom: 46%;\">\n<div class=\"review\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/snowbesat88Chrisss_1.png?v=1643172956\" class=\"review-image\">\n  <p class=\"review-caption\">The banner looks amazing and sits\nPERFECTLY IN MY ROOM!!! Well done and\nunderstanding customer\nservice! Always looking to help out!<br>\n~ Christopher ~<\/p>\n<\/div>\n<div class=\"review\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/snowbesat88Chrisss_3.png?v=1643172956\" class=\"review-image\">\n  <p class=\"review-caption\">I really love the banner. I got the polyester\none and I found it so nice quality.\nThe details on the drawing is so nice and\nit feels good to have something custom to your\n name! All my friends around me love\nit and maybe I'll order another one for my partner.<br>\n~ Vaness ~<\/p>\n<\/div>\n<div class=\"review\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/snowbesat88Chrisss_2.png?v=1643172956\" class=\"review-image\">\n  <p class=\"review-caption\">Although it took a while to get my\nbanner, it was absolutely worth the wait. The\nquality is amazing, the amount of details and\ndesign on it is beautiful. I managed to\npersuade some of my friends to\nget their own :) <br>\n~ Ashley ~<\/p>\n<\/div>\n<\/div>"
         }
       }
     },
@@ -313,10 +293,7 @@
       "164175418377410082",
       "16419312320bd7425b",
       "1643135072efca265b",
-      "1643162240ac72df9a",
-      "16431782666a4f937a",
-      "16431781962f03aca6",
-      "16432451983784064e"
+      "1643162240ac72df9a"
     ],
     "blocks": {
       "10042746950867549768": {
