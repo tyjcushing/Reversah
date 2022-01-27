@@ -3155,13 +3155,60 @@ ul.site-nav li:nth-child(4) a {
 }
 
 h1{
-text-align: center;
-text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
 }
+
+h1:before,
+h1:after {
+	background-color: #d3d3d3;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	position: relative;
+  	vertical-align: middle;
+  	width: 50%;
+}
+
+h1:before {
+  	right: 0.5em;
+  	margin-left: -50%;
+}
+
+h1:after {
+  	left: 0.5em;
+  	margin-right: -50%;
+}
+
 h2{
-text-align: center;
-text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
 }
+
+h2:before,
+h2:after {
+	background-color: #d3d3d3;
+  	content: "";
+  	display: inline-block;
+  	height: 1px;
+  	position: relative;
+  	vertical-align: middle;
+  	width: 50%;
+}
+
+h2:before {
+  	right: 0.5em;
+  	margin-left: -50%;
+}
+
+h2:after {
+  	left: 0.5em;
+  	margin-right: -50%;
+}
+
+
 .product__img-wrapper div img {
   border-radius: 20px;
 }
