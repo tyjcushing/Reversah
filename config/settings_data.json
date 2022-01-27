@@ -280,12 +280,6 @@
           "custom_html": "<h2>Live Streams<\/h2>\n\n<p style=\"text-align: center;\">Come and join me for streams where I design new banners and\nlanyards! I also play Valorant with viewers, so hop on in and say hi!<\/p>\n\n<script src=\"https:\/\/player.twitch.tv\/js\/embed\/v1.js\"><\/script>\n<div id=\"5253\"><\/div>\n<script type=\"text\/javascript\">\n  var options = {\n    height: 400,\n    width: \"100%\",\n    channel: \"reversah\",\n    parent: [\"reversah.myshopify.com\", \"reversah.com\"]\n  };\n  var player = new Twitch.Player(\"5253\", options);\n  player.setVolume(0.5);\n<\/script>"
         }
       },
-      "164316171577512c7b": {
-        "type": "custom-html",
-        "settings": {
-          "custom_html": "<style type=\"text\/css\">\n\n.bottom-bar {\ndisplay: inline-block;\n  width: 100%;\n  height: 50px;\n  background-color: #86B5A2;\n  padding-bottom: 0px;\n}\n\n.menu-items-bottom-bar {\n  height: 100%;\n  float:left;\n  text-align: center;\n  font-size: 1em;\n}\n\n@media screen and (max-width: 800px) {\n   .menu-items-bottom-bar {  \n    font-size: 0.9em;\n  }\n}\n\n@media screen and (max-width: 700px) {\n   .menu-items-bottom-bar {  \n    font-size: 0.8em;\n  }\n}\n\n@media screen and (max-width: 600px) {\n   .menu-items-bottom-bar {  \n    font-size: 0.6em;\n  }\n}\n@media screen and (max-width: 530px) {\n   .menu-items-bottom-bar {  \n    font-size: 0.4em;\n  }\n}\n@media screen and (max-width: 400px) {\n   .menu-items-bottom-bar {  \n    font-size: 0.3em;\n  }\n}\n\n.menu-items-bottom-bar:nth-child(1) {\n  margin-left: 2%;\n}\n\n.site-nav__link {\n  float: left;\n  background-color: #86B5A2;\n  height: 100%;\n  color:  white;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  padding-top:  10px;\n}\n\n.site-nav__link:hover {\n  background-color: #95CCC2;\n}\n\n.search-bottom-bar {\n  float: right;\n}\n<\/style>\n\n<div class=\"bottom-bar\"> \n  <div class=\"menu-items-bottom-bar\"><a href=\"\/\" class=\"site-nav__link\" data-meganav-type=\"child\">Home<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/collections\/all\" class=\"site-nav__link\" data-meganav-type=\"child\">Shop<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/meet-the-team\" class=\"site-nav__link\" data-meganav-type=\"child\">About<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/gallery\" class=\"site-nav__link\" data-meganav-type=\"child\">Gallery<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/community\" class=\"site-nav__link\" data-meganav-type=\"child\">Reviews<\/a><\/div>\n  <div class=\"menu-items-bottom-bar\"><a href=\"\/pages\/help\" class=\"site-nav__link\" data-meganav-type=\"child\">Help<\/a><\/div>\n\n\n  <div class=\"search-bottom-bar\"><\/div>\n\n<\/div>"
-        }
-      },
       "1643162240ac72df9a": {
         "type": "custom-html",
         "settings": {
@@ -305,6 +299,12 @@
         "settings": {
           "custom_html": "<p>hello<\/p>"
         }
+      },
+      "16432451983784064e": {
+        "type": "custom-html",
+        "settings": {
+          "custom_html": "<style>\n\n  #custom-newsletter {\n    width: 100%;\n    background-color: rgba(238, 238, 238, 0.9);\n    background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/brim-sage.png?v=1643151158\");\n    background-size: cover;\n    background-repeat: no-repeat;\n    height:12%;\n  }\n\n  #subscribe {\n    background-color: #FA4454;\n    border-radius: 5px;\n    margin-left: 10px;\n  }\n<\/style>\n      <div id=\"custom-newsletter\" style=\"width: 100%; color: white; text-align: center; padding-top: 7%; padding-bottom: 7%;\">\n        <div style=\"width: 50%; text-align: center; margin-left: 25%;\">\n          <h2>\n            Stay Awesome\n          <\/h2>\n          <p>Be the first to know about new designs, the latest products, and stay up to date on current news about my channel!<\/p>\n      <\/div>\n        <div style=\"width: 50%; text-align: center;  margin-left: 25%;\">\n        <form method=\"post\" action=\"\/contact#contact_form\" id=\"contact_form\" accept-charset=\"UTF-8\" class=\"contact-form\">\n<input type=\"hidden\" name=\"form_type\" value=\"customer\"><input type=\"hidden\" name=\"utf8\" value=\"✓\">\n          \n          \n            <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter\">\n            <div class=\"input-group\">\n              <label for=\"Email\" class=\"visually-hidden\">Email<\/label>\n              <input type=\"email\" value=\"\" placeholder=\"Your email\" name=\"contact[email]\" id=\"Email\" class=\"input-group-field\" aria-label=\"Your email\" autocorrect=\"off\" autocapitalize=\"off\">\n              <span class=\"input-group-btn\">\n                <button type=\"submit\" class=\"btn\" name=\"commit\" id=\"subscribe\">Subscribe<\/button>\n              <\/span>\n            <\/div>\n        <\/form>\n        <\/div>\n  <\/div>"
+        }
       }
     },
     "content_for_index": [
@@ -316,7 +316,7 @@
       "1643162240ac72df9a",
       "16431782666a4f937a",
       "16431781962f03aca6",
-      "164316171577512c7b"
+      "16432451983784064e"
     ],
     "blocks": {
       "10042746950867549768": {
