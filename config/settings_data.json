@@ -26,7 +26,7 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "social_sharing_style": "normal",
+    "social_sharing_style": "is-clean",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -177,7 +177,7 @@
           "product_thumbnails_position": "right",
           "show_extra_tab": false,
           "extra_tab_content": "",
-          "social_sharing": false,
+          "social_sharing": true,
           "enable_payment_button": true,
           "add_to_cart_width": "small"
         }
