@@ -202,9 +202,9 @@
   			}
 
   			#AddToCart {
-    				border-radius: 20px;
-    				box-shadow: 12px 12px 2px 2px rgba(255, 255, 255, .5);
-              background-color:  background: #95CCC2;
+    			border-radius: 20px;
+    			box-shadow: 12px 12px 2px 2px rgba(255, 255, 255, .5);
+              	background-color:  background: #95CCC2;
   			}
 			</style>
  			{% form 'product', product, class: productform_class %}
@@ -299,7 +299,94 @@
               </ul>
               <div id="description" class="tab-switch__content" data-content="description">
                 <div class="product-description rte" itemprop="description">
-                  {{ product.description }}
+                  {% if product.title contains "Lanyard" %}
+                  	{{ product.description }} 
+                  {% endif %}
+                  
+                  {% unless product.title contains "Lanyard" %}
+					<style>
+
+					<style>
+					.accordion {
+					background-color: #ccc;
+					color: #444;
+					cursor: pointer;
+					padding: 18px;
+					width: 100%;
+					border: none;
+					border-radius: 20px;
+					text-align: left;
+					outline: none;
+					font-size: 15px;
+					transition: 0.4s;
+					}
+					
+					.active, .accordion:hover {
+					background-color: #aaa; 
+					}
+					
+					.panel {
+					padding: 0 18px;
+					display: none;
+					background-color: white;
+					overflow: hidden;
+					}
+					</style>
+					
+					<button class="accordion">Description:</button>
+					<div class="panel">
+					<p>
+					Banners are made with high quality polyester.<br><br>
+					
+					Dimensions are 18 inches x 42 inches.<br><br>
+					
+					Comes with hanging string and wooden dowel.</p>
+					</div>
+					<br><br>
+					
+					<button class="accordion">Disclaimer:</button>
+					<div class="panel">
+					<p>
+					If you’ve entered the wrong Name, Title, Rank,
+					or Agent, please contact us here.<br><br>
+					
+					We are NOT responsible for any damage done
+					to the product during shipping and have
+					optimized the packaging to protect the
+					banners.<br><br>
+					
+					NO REFUNDS AFTER ORDERS ENTER
+					PRODUCTION. NO EXCEPTIONS.</p>
+					</div>
+					<br><br>
+					
+					<button class="accordion">Shipping:</button>
+					<div class="panel">
+					<p>
+					3-4 business day shipping indicated in the
+					shipping section of checkout is defined by 3-4
+					business days as the time it takes for the
+					product to arrive after the packaging stage is
+					complete.</p>
+					</div>
+					
+					<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					
+					for (i = 0; i < acc.length; i++) {
+					acc[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var panel = this.nextElementSibling;
+						if (panel.style.display === "block") {
+						panel.style.display = "none";
+						} else {
+						panel.style.display = "block";
+						}
+					});
+					}
+					</script>
+                  {% endunless %}
                 </div>
               </div>
               <div id="extra" class="tab-switch__content" data-content="extra">
