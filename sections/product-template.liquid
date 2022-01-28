@@ -195,6 +195,17 @@
           
           
           {% if product.title contains "Lanyard" %}
+          <style type="text/css">
+  			input {
+    			border-radius: 20px;
+    			border-color: lightgray;
+  			}
+
+  			#AddToCart {
+    				border-radius: 20px;
+    				box-shadow: 12px 12px 2px 2px rgba(255, 255, 255, .5);
+  			}
+			</style>
  			{% form 'product', product, class: productform_class %}
             {{ form | payment_terms }}
             <select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
@@ -227,6 +238,17 @@
           
           
           {% unless product.title contains "Lanyard" %}
+          <style type="text/css">
+  			input {
+    			border-radius: 20px;
+    			border-color: lightgray;
+  			}
+
+  			#AddToCart {
+    				border-radius: 20px;
+    				box-shadow: 12px 12px 2px 2px rgba(255, 255, 255, .5);
+  			}
+			</style>
   				
 		  {% form 'product', product, class:productform_class %}
             <select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
