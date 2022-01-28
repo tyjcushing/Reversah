@@ -1,31 +1,58 @@
-{%- if section.settings.show_product_recommendations -%}
-  <hr class="hr--clear hr--small">
+<div
+  class="product-recommendations"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4"
+>
+  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+    <h2>You may also like</h2>
 
-  {%- if recommendations.performed -%}
-    {%- if recommendations.products_count > 0 -%}
-      <div class="product-recommendations">
-        {%- if section.settings.heading != blank -%}
-          <div class="section-header section-header--medium">
-            <h2 class="h4">{{ section.settings.heading | escape }}</h2>
-          </div>
-        {%- endif -%}
-        <div class="grid-uniform grid-link__container">
-          {%- for product in recommendations.products -%}
-            {%- assign grid_item_width = 'post-large--one-quarter medium--one-quarter small--one-half' -%}
-            {%- assign product_width = 300 -%}
-            {%- assign featured = product -%}
+    <ul>
+      {%- for product in recommendations.products -%}
+        <li class="product">
+          <a href="{{ product.url }}">
+            <img
+              class="product__img"
+              src="{{ product.featured_image | image_url: width: 300, height: 300 }}"
+              alt="{{ product.featured_image.alt }}"
+            />
 
-            <div class="grid__item {{ grid_item_width }}">
-              {% include 'product-grid-item' %}
-            </div>
-          {%- endfor -%}
-        </div>
-      </div>
-    {%- endif -%}
-  {%- else  -%}
-    <div data-base-url="{{ routes.product_recommendations_url }}" data-product-id="{{ product.id }}" data-section-id="{{ section.id }}" data-section-type="product-recommendations"></div>
+            <p class="product__title">{{ product.title }}</p>
+            <p class="product__price">{{ product.price | money}}</p>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
   {%- endif -%}
-{%- endif -%}
+</div>
+
+<script>
+  const handleIntersection = (entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+
+    observer.unobserve(productRecommendationsSection);
+
+    const url = productRecommendationsSection.dataset.url;
+
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('.product-recommendations');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+        }
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  };
+
+  const productRecommendationsSection = document.querySelector('.product-recommendations');
+  const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+
+  observer.observe(productRecommendationsSection);
+</script>
 
 {% schema %}
 {
