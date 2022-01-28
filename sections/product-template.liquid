@@ -325,6 +325,18 @@
 					.active, .accordion:hover {
 					background-color: #ccc; 
 					}
+                      
+                      .accordion:after {
+  						content: '\002B';
+  						color: #777;
+ 						font-weight: bold;
+  						float: right;
+  						margin-left: 5px;
+					}
+
+					.active:after {
+  						content: "\2212";
+					}
 					
 					.panel {
 					padding: 0 18px;
@@ -332,6 +344,7 @@
                     border-radius: 20px;
 					background-color: #ECFFF9;
 					overflow: hidden;
+                      transition: max-height 0.2s ease-out;
 					}
 					</style>
 					
@@ -446,6 +459,7 @@
 					border-radius: 5px;
 					background-color: #ECFFF9;
 					overflow: hidden;
+                      transition: max-height 0.2s ease-out;
 					}
 					</style>
 					
