@@ -189,8 +189,13 @@
               {%- endif -%}
             </div>
           {%- endif -%}
-
-          {% form 'product', product, class: productform_class %}
+          
+          
+          
+          
+          
+          {% if product.title contains "Lanyard" %}
+ 			{% form 'product', product, class: productform_class %}
             {{ form | payment_terms }}
             <select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
               {% for variant in product.variants %}
@@ -218,7 +223,57 @@
               {{ form | payment_button }}
             {% endif %}
           {% endform %}
+		{% endif %}
+          
+          
+          {% unless product.title contains "Lanyard" %}
+  				
+		  {% form 'product', product, class:productform_class %}
+            <select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
+              {% for variant in product.variants %}
+                {% if variant.available %}
 
+                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+
+                {% else %}
+                  <option disabled="disabled">
+                    {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                  </option>
+                {% endif %}
+              {% endfor %}
+            </select>
+			<p class="line-item-property__field">
+  				<label for="name-none-if-you-do-not-want-any-name-to-be-put">Name (none if you do not want any name to be put)</label>
+  				<input required class="required" id="name-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Name (none if you do not want any name to be put)]">
+			</p>
+            <p class="line-item-property__field">
+  			<label for="title-none-if-you-do-not-want-any-name-to-be-put">Title (none if you do not want any name to be put)</label>
+  			<input required class="required" id="title-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Title (none if you do not want any name to be put)]">
+			</p>
+          	<p class="line-item-property__field">
+  				<label for="rank-none-if-you-do-not-want-any-name-to-be-put">Rank (none if you do not want any name to be put)</label>
+			  	<input required class="required" id="rank-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Rank (none if you do not want any name to be put)]">
+			</p>
+            <div class="product-single__quantity{% unless section.settings.product_quantity_enable %} is-hidden{% endunless %}">
+              <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
+              <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+            </div>
+
+            <button type="submit" name="add" id="AddToCart" class="btn {{ btn_class }}{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary{% endif %}">
+              <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
+            </button>
+            {% if section.settings.enable_payment_button %}
+              {{ form | payment_button }}
+            {% endif %}
+          {% endform %}
+			{% endunless %}
+          
+          
+         
+
+          
+          
+          
           {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty %}
             <div class="tabs">
               <ul class="tab-switch__nav">
