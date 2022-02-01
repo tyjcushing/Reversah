@@ -36,8 +36,9 @@
 
         <label for="ContactFormMessage" >{{ 'contact.form.message' | t }}:</label>
         <textarea rows="10" id="ContactFormMessage" name="contact[{{ 'contact.form.message' | t }}]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
-
-        <input type="submit" class="btn right" style="color: white; background-color: #95CCC2; border-radius:20px; text-align:center; padding-right: 10px; padding-left: 10px;" value="{{ 'contact.form.send' | t }}">
+	
+      <p> DISCLAIMER: Please note that our team is comprised of full time college students! We’re all very busy, so if we don’t respond immediately, know that we’ll get to your message soon enough. Thank you for understanding! </p>
+        <input type="submit" class="btn right" style="color: white; background-color: #95CCC2; border-radius:20px; text-align:center; padding-right: 20px; padding-left: 20px;" value="{{ 'contact.form.send' | t }}">
 
       {% endform %}
       
