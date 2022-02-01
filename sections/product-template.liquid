@@ -222,7 +222,8 @@
               <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
             </div>
 
-            <button type="submit" name="add" id="AddToCart" class="btn {{ btn_class }}{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary{% endif %}">
+            <button type="submit" name="add" id="AddToCart" style="color: #fff; background-color: background: rgba(149, 204, 194, 1);
+ border-radius: 20px;" class="btn {{ btn_class }}{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary{% endif %}">
               <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
             </button>
             {% if section.settings.enable_payment_button %}
