@@ -23,7 +23,7 @@
         {{ form.errors | default_errors }}
 
         {% assign name_attr = 'contact.form.name' | t | handle %}
-        <label for="ContactFormName" class="label--hidden">{{ 'contact.form.name' | t }}</label>
+        <label for="ContactFormName" class="label--hidden">Name:</label>
         <input type="text" id="ContactFormName" name="contact[{{ 'contact.form.name' | t }}]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
 
         <label for="ContactFormEmail" class="label--hidden">{{ 'contact.form.email' | t }}</label>
