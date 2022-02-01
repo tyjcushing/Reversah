@@ -55,6 +55,7 @@
                                data-widths="[40, 65, 90, 120, 150, 180, 360, 480, 600]"
                                data-aspectratio="{{ item.image.aspect_ratio }}"
                                data-sizes="auto"
+                               style="border-radius:20px;"
                                alt="{{ item.title | escape }}">
                         </div>
                       </div>
@@ -234,9 +235,14 @@
               Continue shopping button
             {% endcomment %}
             <a class="btn btn--secondary" href="{{ routes.all_products_collection_url }}">{{ 'cart.general.continue_shopping' | t }}</a>
-
+			<style type="text/css">
+  
+  .btn {
+    color: rgba(149, 204, 194, 1); border-radius: 20px; background-color: ghostwhite; border-width: 3px; border-color:rgba(149, 204, 194, 1);
+  }
+</style>
             <button type="submit" name="update" class="btn btn--secondary update-cart">{{ 'cart.general.update' | t }}</button>
-            <button type="submit" name="checkout" class="btn">{{ 'cart.general.checkout' | t }}</button>
+            <button type="submit" style="color: rgba(149, 204, 194, 1); border-radius: 20px; background-color: ghostwhite; border-width: 3px; border-color: " name="checkout" class="btn">{{ 'cart.general.checkout' | t }}</button>
 
             {% if additional_checkout_buttons %}
               <div class="cart__additional_checkout">{{ content_for_additional_checkout_buttons }}</div>
