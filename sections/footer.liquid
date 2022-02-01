@@ -32,6 +32,34 @@
     float: none;
   }
 
+#Email {
+    width: 1000px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    #Email {
+    width: 600px;
+  }
+}
+
+  @media screen and (max-width: 900px) {
+    #Email {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    #Email {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    #Email {
+    width: 200px;
+  }
+}
+
 
 </style>
       <div id="custom-newsletter" style="width: 100%; color: white; text-align: center; padding-top: 12%; padding-bottom: 12%;">
@@ -48,7 +76,7 @@
             <input type="hidden" name="contact[tags]" value="newsletter">
             <div class="input-group">
               <label for="Email" class="visually-hidden">Email</label>
-              <input style="max-width: 100%; width: 100%;" type="email" value="" placeholder="Your email" name="contact[email]" id="Email" class="input-group-field" aria-label="Your email" autocorrect="off" autocapitalize="off">
+              <input style="max-width: 100%;" type="email" value="" placeholder="Your email" name="contact[email]" id="Email" class="input-group-field" aria-label="Your email" autocorrect="off" autocapitalize="off">
               <span class="input-group-btn">
                 <button type="submit" class="btn" name="commit" id="subscribe">Subscribe</button>
               </span>
