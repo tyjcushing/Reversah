@@ -1,5 +1,4 @@
 <div itemscope itemtype="http://schema.org/Product" id="ProductSection" data-section-id="{{ section.id }}" data-section-type="product-template" data-image-zoom-type="{{ section.settings.product_image_zoom_type }}" data-show-extra-tab="{{ section.settings.show_extra_tab }}" data-extra-tab-content="{{ section.settings.extra_tab_content }}" data-enable-history-state="true">
-
   {% case section.settings.add_to_cart_width %}
     {% when 'small' %}
       {%- assign btn_class = 'btn--wide' -%}
@@ -11,7 +10,6 @@
       {%- assign btn_class = 'btn--full' -%}
       {%- assign productform_class = 'product-form--full' -%}
   {% endcase %}
-
   {% if section.settings.add_to_cart_width != 'small' %}
     <style>
       @media screen and (min-width: 769px){
@@ -26,29 +24,22 @@
       }
     </style>
   {% endif %}
-
   <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
   <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
-
   <div class="section-header section-header--breadcrumb">
     {% include 'breadcrumb' %}
   </div>
-
   <div class="product-single">
     <div class="grid product-single__hero">
       <div class="grid__item post-large--one-half">
-
         {% if section.settings.product_thumbnails_position == 'below' or product.images.size < 2 %}
-
           <div class="product-single__photos">
             {% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
-
             {% for image in product.images %}
               {% capture img_id %}ProductImage-{{ image.id }}{% endcapture %}
               {% capture img_wrapper_id %}ProductImageWrapper-{{ image.id }}{% endcapture %}
               {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
               {% include 'image-style' with image: image, small_style: false, width: 700, height: 1024, wrapper_id: img_wrapper_id, img_id: img_id %}
-
               <div id="{{ img_wrapper_id }}" class="product-single__image-wrapper supports-js{% unless featured_image == image %} hide{% endunless %}{% if section.settings.product_image_zoom_type == 'lightbox' %} zoom-lightbox{% endif %}" data-image-id="{{ image.id }}">
                 <div style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;">
                   <img id="{{ img_id }}"
@@ -63,14 +54,11 @@
                 </div>
               </div>
             {% endfor %}
-
             <noscript>
               <img src="{{ featured_image | img_url: '1024x1024', scale: 2 }}" alt="{{ featured_image.alt | escape }}">
             </noscript>
           </div>
-
           {% if product.images.size > 1 %}
-
             <ul class="product-single__thumbnails grid-uniform" id="ProductThumbs">
               {% for image in product.images %}
                 <li class="grid__item wide--one-quarter large--one-third medium-down--one-third">
@@ -80,22 +68,16 @@
                 </li>
               {% endfor %}
             </ul>
-
           {% endif %}
-
         {% else %}
-
           <div class="grid">
-
             <div class="grid__item four-fifths product-single__photos" id="ProductPhoto">
               {% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
-
               {% for image in product.images %}
                 {% capture img_id %}ProductImage-{{ image.id }}{% endcapture %}
                 {% capture img_wrapper_id %}ProductImageWrapper-{{ image.id }}{% endcapture %}
                 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 {% include 'image-style' with image: image, small_style: false, width: 700, height: 1024, wrapper_id: img_wrapper_id, img_id: img_id %}
-
                 <div id="{{ img_wrapper_id }}" class="product-single__image-wrapper supports-js{% unless featured_image == image %} hide{% endunless %}{% if section.settings.product_image_zoom_type == 'lightbox' %} zoom-lightbox{% endif %}" data-image-id="{{ image.id }}">
                   <div style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;">
                     <img id="{{ img_id }}"
@@ -112,14 +94,11 @@
               {% else %}
                 <img src="{{ featured_image | img_url: '1024x1024', scale: 2 }}" alt="{{ featured_image.alt | escape }}">
               {% endfor %}
-
               <noscript>
                 <img src="{{ featured_image | img_url: '1024x1024', scale: 2 }}" alt="{{ featured_image.alt | escape }}">
               </noscript>
             </div>
-
             <div class="grid__item one-fifth">
-
               <ul class="grid product-single__thumbnails" id="ProductThumbs">
                 {% for image in product.images %}
                   <li class="grid__item">
@@ -129,13 +108,9 @@
                   </li>
                 {% endfor %}
               </ul>
-
             </div>
-
           </div>
-
         {% endif %}
-
         {% if section.settings.product_image_zoom_type == 'lightbox' %}
         <ul class="gallery" class="hidden">
           {% for image in product.images %}
@@ -143,26 +118,22 @@
           {% endfor %}
         </ul>
         {% endif %}
-
       </div>
       <div class="grid__item post-large--one-half">
         {% if section.settings.product_vendor_enable %}
           <span class="h3" itemprop="brand">{{ product.vendor }}</span>
         {% endif %}
+        
         <h1 class="product-single__title" itemprop="name">{{ product.title }}</h1>
-
         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           {% assign variant = product.selected_or_first_available_variant %}
-
           <meta itemprop="priceCurrency" content="{{ cart.currency.iso_code }}">
           <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
-
           <div class="product-single__prices{% if cart.taxes_included or shop.shipping_policy.body != blank %} product-single__prices--policy-enabled{% endif %}">
             <span id="PriceA11y" class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
             <span id="ProductPrice" class="product-single__price" itemprop="price" content="{{ product.price | divided_by: 100.00 }}">
               {{ product.price | money }}
             </span>
-
             {% if product.compare_at_price > product.price %}
               <span id="ComparePriceA11y" class="visually-hidden" aria-hidden="false">{{ 'products.product.sale_price' | t }}</span>
               <s id="ComparePrice" class="product-single__sale-price">
@@ -174,11 +145,8 @@
                 {{ product.compare_at_price_max | money }}
               </s>
             {% endif %}
-
             {% include 'product-unit-price', variant: variant, available: true %}
-
           </div>
-
           {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
             <div class="product-single__policies{% if product.has_only_default_variant and section.settings.product_quantity_enable == false %} product__policies--no-dropdowns{% endif %} rte">
               {%- if cart.taxes_included -%}
@@ -189,105 +157,16 @@
               {%- endif -%}
             </div>
           {%- endif -%}
-          
-          
-          
-          
-          
-          {% if product.title contains "Lanyard" %}
-          <style type="text/css">
-  			input {
-    			border-radius: 20px;
-    			border-color: lightgray;
-  			}
 
-  			#AddToCart {
-    			border-radius: 20px;
-    			box-shadow: 12px 12px 2px 2px rgba(255, 255, 255, .5);
-              	background-color:  background: #95CCC2;
-  			}
-			</style>
- 			{% form 'product', product, class: productform_class %}
+          {% form 'product', product, class: productform_class %}
             {{ form | payment_terms }}
             <select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
               {% for variant in product.variants %}
-                {% if variant.available %}
-
-                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
-
-                {% else %}
-                  <option disabled="disabled">
-                    {{ variant.title }} - {{ 'products.product.sold_out' | t }}
-                  </option>
-                {% endif %}
-              {% endfor %}
-            </select>
-
-            <div class="product-single__quantity{% unless section.settings.product_quantity_enable %} is-hidden{% endunless %}">
-              <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
-              <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
-            </div>
-
-            <button type="submit" name="add" id="AddToCart" class="btn {{ btn_class }}{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary{% endif %}">
-              <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
-            </button>
-            {% if section.settings.enable_payment_button %}
+  @@ -218,7 +223,57 @@
               {{ form | payment_button }}
-            {% endif %}
+            {% endfor %}
           {% endform %}
-		{% endif %}
-          
-          
-          {% unless product.title contains "Lanyard" %}
-          <style type="text/css">
-  			input {
-    			border-radius: 20px;
-    			border-color: lightgray;
-  			}
 
-  			#AddToCart {
-    				border-radius: 20px;
-    				box-shadow: 12px 12px 2px 2px rgba(255, 255, 255, .5);
-              background-color:  background: #95CCC2;
-  			}
-			</style>
-  				
-		  {% form 'product', product, class:productform_class %}
-          <select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
-
-			<p class="line-item-property__field">
-  				<label for="name-none-if-you-do-not-want-any-name-to-be-put">Name:</label>
-  				<input required class="required" id="name-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Name:]" placeholder="enter name here">
-			</p>
-            <p class="line-item-property__field">
-  			<label for="title-none-if-you-do-not-want-any-name-to-be-put">Title:</label>
-  			<input required class="required" id="title-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Title:]" placeholder="write “NONE” if you do not wish to have a title">
-			</p>
-          	<p class="line-item-property__field">
-  				<label for="rank-none-if-you-do-not-want-any-name-to-be-put">Rank:</label>
-			  	<input required class="required" id="rank-none-if-you-do-not-want-any-name-to-be-put" type="text" name="properties[Rank:]" placeholder="write “NONE” if you do not wish to have a rank">
-              	<p>note: please indicate which division i.e. Silver 3</p>
-			</p>
-            <div class="product-single__quantity{% unless section.settings.product_quantity_enable %} is-hidden{% endunless %}">
-              <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
-              <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
-            </div>
-
-            <button type="submit" name="add" id="AddToCart" class="btn {{ btn_class }}{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary{% endif %}">
-              <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
-            </button>
-            {% if section.settings.enable_payment_button %}
-              {{ form | payment_button }}
-            {% endif %}
-          {% endform %}
-			{% endunless %}
-          
-          
-         
-
-          
-          
-          
           {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty %}
             <div class="tabs">
               <ul class="tab-switch__nav">
@@ -300,111 +179,7 @@
               </ul>
               <div id="description" class="tab-switch__content" data-content="description">
                 <div class="product-description rte" itemprop="description">
-                  {% if product.title contains "Lanyard" %}
-                  	{{ product.description }} 
-                  {% endif %}
-                  
-                  {% unless product.title contains "Lanyard" %}
-					<style>
-
-					<style>
-					.accordion {
-					background-color: #eee;
-					color: #444;
-					cursor: pointer;
-					padding: 18px;
-                    padding-right: 300px;
-					width: 100%;
-					border: 0px;
-					border-radius: 20px;
-					text-align: left;
-					outline: none;
-					font-size: 15px;
-					transition: 0.4s;
-					}
-					
-					.active, .accordion:hover {
-					background-color: #ccc; 
-					}
-                      
-                      .accordion:after {
-  						content: '\002B';
-  						color: #777;
- 						font-weight: bold;
-  						float: right;
-  						margin-left: 5px;
-					}
-
-					.active:after {
-  						content: "\2212";
-					}
-					
-					.panel {
-					padding: 0 18px;
-					display: none;
-                    border-radius: 20px;
-					background-color: #ECFFF9;
-					overflow: hidden;
-                      transition: max-height 0.2s ease-out;
-					}
-					</style>
-					
-					<button style="color: #444; width:100%; text-align:left; padding: 18px; border: 0px; background-color: #c9d9e3; border-radius: 20px; outline: none; transition: 0.4s;" class="accordion">Description:</button>
-					<div class="panel">
-					<p>
-					Banners are made with high quality polyester.<br><br>
-					
-					Dimensions are 18 inches x 42 inches.<br><br>
-					
-					Comes with hanging string and wooden dowel.</p>
-					</div>
-					<br><br>
-					
-					<button style="color: #444; width:100%; text-align:left; padding: 18px; border: 0px; background-color: #c9d9e3; border-radius: 20px; outline: none; transition: 0.4s;" class="accordion">Disclaimer:</button>
-					<div class="panel">
-					<p>
-					If you’ve entered the wrong Name, Title, Rank,
-					or Agent, please contact us here.<br><br>
-					
-					We are NOT responsible for any damage done
-					to the product during shipping and have
-					optimized the packaging to protect the
-					banners.<br><br>
-					
-					NO REFUNDS AFTER ORDERS ENTER
-					PRODUCTION. NO EXCEPTIONS.</p>
-					</div>
-					<br><br>
-					
-					<button style="color: #444; width:100%; text-align:left; padding: 18px; border: 0px; background-color: #c9d9e3; border-radius: 20px; outline: none; transition: 0.4s;" class="accordion">Shipping:</button>
-					<div class="panel">
-					<p>
-					3-4 business day shipping indicated in the
-					shipping section of checkout is defined by 3-4
-					business days as the time it takes for the
-					product to arrive after the packaging stage is
-					complete.</p>
-					</div>
-					
-					<script>
-					var acc = document.getElementsByClassName("accordion");
-					var i;
-					
-					for (i = 0; i < acc.length; i++) {
-					acc[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var panel = this.nextElementSibling;
-						if (panel.style.display === "block") {
-						panel.style.display = "none";
-						} else {
-						panel.style.display = "block";
-						}
-					});
-					}
-					</script>
-                  {% endunless %}
-                  
-                  
+                  {{ product.description }}
                 </div>
               </div>
               <div id="extra" class="tab-switch__content" data-content="extra">
@@ -415,129 +190,19 @@
             </div>
           {% else %}
             <div class="product-description rte" itemprop="description">
-              {% if product.title contains "Lanyard" %}
-                  	{{ product.description }} 
-                  {% endif %}
-                  
-                  {% unless product.title contains "Lanyard" %}
-					<style>
-
-					<style>
-					.accordion {
-					background-color: #eee;
-					color: #444;
-					cursor: pointer;
-					padding: 18px;
-                    padding-right: 300px;
-					width: 100%;
-					border: 0px;
-					border-radius: 20px;
-					text-align: left;
-					outline: none;
-					font-size: 15px;
-					transition: 0.4s;
-					}
-					
-					.active, .accordion:hover {
-					background-color: #ccc; 
-					}
-                      
-                     .accordion:after {
-  						content: '\002B';
-  						color: #777;
- 						font-weight: bold;
-  						float: right;
-  						margin-left: 5px;
-					}
-
-					.active:after {
-  						content: "\2212";
-					}
-					
-					.panel {
-					padding: 0 18px;
-					display: none;
-					border-radius: 5px;
-					background-color: #ECFFF9;
-					overflow: hidden;
-                      transition: max-height 0.2s ease-out;
-					}
-					</style>
-					
-					<button style="color: #444; width:100%; text-align:left; padding: 18px; border: 0px; background-color: #c9d9e3; border-radius: 20px; outline: none; transition: 0.4s;" class="accordion">Description:</button>
-					<div class="panel">
-					<p>
-					Banners are made with high quality polyester.<br><br>
-					
-					Dimensions are 18 inches x 42 inches.<br><br>
-					
-					Comes with hanging string and wooden dowel.</p>
-					</div>
-					<br><br>
-					
-					<button style="color: #444; width:100%; text-align:left; padding: 18px; border: 0px; background-color: #c9d9e3; border-radius: 20px; outline: none; transition: 0.4s;" class="accordion">Disclaimer:</button>
-					<div class="panel">
-					<p>
-					If you’ve entered the wrong Name, Title, Rank,
-					or Agent, please contact us here.<br><br>
-					
-					We are NOT responsible for any damage done
-					to the product during shipping and have
-					optimized the packaging to protect the
-					banners.<br><br>
-					
-					NO REFUNDS AFTER ORDERS ENTER
-					PRODUCTION. NO EXCEPTIONS.</p>
-					</div>
-					<br><br>
-					
-					<button style="color: #444; width:100%; text-align:left; padding: 18px; border: 0px; background-color: #c9d9e3; border-radius: 20px; outline: none; transition: 0.4s;" class="accordion">Shipping:</button>
-					<div class="panel">
-					<p>
-					3-4 business day shipping indicated in the
-					shipping section of checkout is defined by 3-4
-					business days as the time it takes for the
-					product to arrive after the packaging stage is
-					complete.</p>
-					</div>
-					
-					<script>
-					var acc = document.getElementsByClassName("accordion");
-					var i;
-					
-					for (i = 0; i < acc.length; i++) {
-					acc[i].addEventListener("click", function() {
-						this.classList.toggle("active");
-						var panel = this.nextElementSibling;
-						if (panel.style.display === "block") {
-						panel.style.display = "none";
-						} else {
-						panel.style.display = "block";
-						}
-					});
-					}
-					</script>
-                  {% endunless %}
+              {{ product.description }}
             </div>
           {% endunless %}
-
           {% if section.settings.social_sharing %}
             <hr class="hr--clear hr--small">
             <h2 class="h4">{{ 'products.general.share_title' | t }}</h2>
             {% include 'social-sharing' %}
           {% endif %}
         </div>
-
       </div>
     </div>
   </div>
 </div>
-
-{% unless product == empty %}
-  <script type="application/json" id="ProductJson-{{ section.id }}">
-    {{ product | json }}
-  </script>
-{% endunless %}
 
 {% schema %}
 {
