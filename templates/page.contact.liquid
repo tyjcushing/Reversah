@@ -24,18 +24,18 @@
 
         {% assign name_attr = 'contact.form.name' | t | handle %}
         <label for="ContactFormName" >{{ 'contact.form.name' | t }}:</label>
-        <input type="text" id="ContactFormName" name="contact[{{ 'contact.form.name' | t }}]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+        <input style="color: lightgray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5);" type="text" id="ContactFormName" name="contact[{{ 'contact.form.name' | t }}]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
 
         <label for="ContactFormEmail" >{{ 'contact.form.email' | t }}:</label>
-        <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+        <input style="color: lightgray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5);" type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
 
         {% assign name_attr = 'contact.form.phone' | t | handle %}
       	{%comment%}{{ 'contact.form.phone' | t }} {%endcomment%}
         <label for="ContactFormPhone" >Order Number:</label>
-        <input type="number" id="ContactFormPhone" name="contact[{{ 'contact.form.phone' | t }}]" placeholder="Order Number"  value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+        <input style="color: lightgray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5);" type="number" id="ContactFormPhone" name="contact[{{ 'contact.form.phone' | t }}]" placeholder="Order Number"  value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
 
         <label for="ContactFormMessage" >{{ 'contact.form.message' | t }}:</label>
-        <textarea rows="10" id="ContactFormMessage" name="contact[{{ 'contact.form.message' | t }}]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+        <textarea style="color: lightgray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5);" rows="10" id="ContactFormMessage" name="contact[{{ 'contact.form.message' | t }}]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
 	
       <p> DISCLAIMER: Please note that our team is comprised of full time college students! We’re all very busy, so if we don’t respond immediately, know that we’ll get to your message soon enough. Thank you for understanding! </p>
         <input type="submit" class="btn right" style="color: white; background-color: #95CCC2; border-radius:20px; text-align:center; padding-right: 20px; padding-left: 20px;" value="{{ 'contact.form.send' | t }}">
