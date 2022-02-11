@@ -306,9 +306,16 @@
           "sort": "alphabetical",
           "grid": "3"
         }
+      },
+      "1644546384393480c6": {
+        "type": "custom-html",
+        "settings": {
+          "custom_html": "<meta property=\"og:url\" content=\"https:\/\/reversah.com\/\">\n  <meta property=\"og:image\" content=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/1871\/7362\/files\/banner-image.png?v=1643338031\">\n  <meta property=\"og:title\" content=\"Valorant Banners\">\n  <meta property=\"og:image:type\" content=\"image\/jpeg\">\n  <meta property=\"og:image:alt\" content=\"Reversah example Valorant Banners Jett Sova Sage\">\n\n<p style=\"display:none;\">Reversah's Valorant Banners | Custom Valorant Banners | New Banners and Lanyards Coming Soon<\/p>"
+        }
       }
     },
     "content_for_index": [
+      "1644546384393480c6",
       "slider",
       "1641926353f9b3d8b2",
       "164175418377410082",
