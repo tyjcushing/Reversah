@@ -29,11 +29,10 @@
         <label for="ContactFormEmail" >{{ 'contact.form.email' | t }}:</label>
         <input style="color: gray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5); border-width: 3px;" type="email" id="ContactFormEmail" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
 
-        {% assign name_attr = 'contact.form.phone' | t | handle %}
-      	{%comment%}{{ 'contact.form.phone' | t }} {%endcomment%}
-        <label for="ContactFormPhone" >Order Number:</label>
-        <input style="color: gray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5); border-width: 3px;" type="number" id="ContactFormPhone" name="contact[{{ 'contact.form.phone' | t }}]" placeholder="Order Number"  value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
-
+        {% assign name_attr = 'contact.form.ordernum' | t | handle %}
+      	{%comment%}{{ 'contact.form.ordernum' | t }} {%endcomment%}
+        <label for="ContactFormOrderNum" >Order Number:</label>
+        <input style="color: gray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5); border-width: 3px;" type="number" id="ContactFormOrderNum" name="contact[Order Number]" placeholder="Order Number"  >
         <label for="ContactFormMessage" >{{ 'contact.form.message' | t }}:</label>
         <textarea style="color: gray; background-color: #fff; border-radius:20px; border-color: rgba(163, 163, 163, 0.5); border-width: 3px;" rows="10" id="ContactFormMessage" name="contact[{{ 'contact.form.message' | t }}]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
 	
