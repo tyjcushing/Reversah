@@ -8,71 +8,26 @@
     background-size: cover;
     background-repeat: no-repeat;
     height:25%;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
   }
-
-  .newsletter-header {
-    grid-column: 1 / 4;
-    grid-row: 1;
-  }
-
-  .newsletter-lower {
-    grid-column: 1 / 4;
-    grid-row: 2;
-    margin-left: 30%;
-  }
-
   #subscribe {
     background-color: #FA4454;
     border-radius: 5px;
     margin-left: 0px;
-    float: none;
+    display: inline-block;
   }
 
-@media screen and (max-width: 6800px) {
-    #Email {
-    width: 600px;
-  }
-
-   @media screen and (max-width: 2500px) {
-    #Email {
-    width: 600px;
-  }
+#email-section {
+  align-content: center;
+  text-align: center;
+  display: inline-block;
 }
 
-  @media screen and (max-width: 1500px) {
-    #Email {
-    width: 600px;
-  }
+#email-section input {
+  display: inline-block;
 }
-
-  @media screen and (max-width: 900px) {
-    #Email {
-    width: 500px;
-  }
-}
-
-@media screen and (max-width: 780px) {
-    #Email {
-    width: 420px;
-  }
-}
-
-@media screen and (max-width: 6800px) {
-    #Email {
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-    #Email {
-    width: 200px;
-  }
-}
-
 
 </style>
       <div id="custom-newsletter" style="width: 100%; color: white; text-align: center; padding-top: 12%; padding-bottom: 12%;">
@@ -80,13 +35,14 @@
           <h2 >Stay Awesome</h2>
           <p style="margin-left: 10%; margin-right: 10%;">Be the first to know about new designs, the latest products, and stay up to date on current news about my channel!</p>
       </div>
-        <div style="text-align: center; ">
+
+        <div id="email-section" style="text-align: center; ">
           <br>
         <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
           <div class="newsletter-lower">
           <input type="hidden" name="form_type" value="customer">
           <input type="hidden" name="utf8" value="✓">
-            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input style="margin-left: 10%; margin-right: 10%; text-align: center;" type="hidden" name="contact[tags]" value="newsletter">
             <div class="input-group">
               <label for="Email" class="visually-hidden">Email</label>
               <input style="max-width: 100%;" type="email" value="" placeholder="Your email" name="contact[email]" id="Email" class="input-group-field" aria-label="Your email" autocorrect="off" autocapitalize="off">
