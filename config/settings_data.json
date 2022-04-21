@@ -75,6 +75,7 @@
           },
           "dcc17aa0-f84e-428f-ab23-d3c933279811": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "title": "Contact us",
               "richtext": "<p>Need Help?<br\/><br\/>Business Inquiries:<br\/>cory@reversah.com<\/p>"
